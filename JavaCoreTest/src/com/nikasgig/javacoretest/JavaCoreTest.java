@@ -1,6 +1,8 @@
 package com.nikasgig.javacoretest;
 import java.util.Scanner; // импорт класса Scanner
 
+import com.nikasgig.javacoretest.arraygenerator.ArrayGenerator;
+
 public class JavaCoreTest {
 
 	public static void main(String[] args) {
@@ -97,17 +99,36 @@ public class JavaCoreTest {
 		jack.doDrinking();
 		jack.doEating();
 		jack.doSleeping();
-		jack.showStatus();
+		jack.showStatus(); // we mast have to completely rewrite the old functions
+		
+		System.out.println("----------------------");
+		
+		ArrayGenerator masGen = new ArrayGenerator(1000);
+		
+		System.out.println(masGen.getNum_elemets()); // nothing = 0
+		
+		masGen.setNum_elemets(999);
+		System.out.println(masGen.getNum_elemets());
+		System.out.println("----------------------");
+		masGen.ArrayFill();
+		masGen.ArrayShow();
+		//int n = in.nextInt();
+		System.out.println("----------------------");
+		ArrayGenerator masGen2 = new ArrayGenerator(200);
+		masGen2.setNum_elemets(1);
+		masGen2.ArrayFill();
+		masGen2.ArrayShow();
+		System.out.println("----------------------");
+		masGen.ArrayDelete();
+		masGen2.ArrayDelete();
+		masGen.ArrayShow();
+		masGen2.ArrayShow();
+		System.out.println("----------------------");
 		
 		
 		
 		
 		
-		
-		
-		
-		
-
 	}
 
 }
