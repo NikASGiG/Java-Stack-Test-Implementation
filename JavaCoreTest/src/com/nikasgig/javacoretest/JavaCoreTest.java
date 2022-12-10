@@ -93,8 +93,11 @@ public class JavaCoreTest {
 		System.out.println("----- 10.12.2022 -----");
 		
 		
-		
-		
+		Jack_Person jack = new Jack_Person();
+		jack.doDrinking();
+		jack.doEating();
+		jack.doSleeping();
+		jack.showStatus();
 		
 		
 		
