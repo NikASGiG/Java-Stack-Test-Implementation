@@ -90,7 +90,20 @@ public class JavaCoreTest {
 		corgi.showStatus();
 		System.out.println("----------------------");
 		
-		//System.out.println("----- 08.12.2022 -----");
+		System.out.println("----- 10.12.2022 -----");
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 
 	}
 
