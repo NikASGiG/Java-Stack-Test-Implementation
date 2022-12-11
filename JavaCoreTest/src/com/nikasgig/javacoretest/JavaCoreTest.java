@@ -175,7 +175,7 @@ public class JavaCoreTest {
 			System.out.println("I do not know what the problem, but...");
 			// TODO Auto-generated catch block
 			
-			File file1 = new File(File.separator+"com"+File.separator+"nikasgig"+File.separator+"javacoretest"+ File.separator +"data" + File.separator + "db_test");	
+			File file1 = new File("src"+File.separator+"com"+File.separator+"nikasgig"+File.separator+"javacoretest"+ File.separator +"data" + File.separator + "db_test");	
 			try {
 				Scanner dbs1 = new Scanner(file1);
 			} catch (FileNotFoundException e2) {
@@ -186,8 +186,7 @@ public class JavaCoreTest {
 			
 		}
 		
-		// URL url = insertionSort.class.getResource("10_Random");
-		// File file = new File(url.toURI());
+		// the problem was found
 		
 		
 		
