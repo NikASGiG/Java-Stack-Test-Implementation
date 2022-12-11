@@ -1,5 +1,6 @@
 package com.nikasgig.javacoretest;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -158,9 +159,11 @@ public class JavaCoreTest {
 		List<Integer> masL = new ArrayList<Integer>();
 		masL = arrtolist.ToList(mas);
 		arrtolist.ListShow(masL);
+		System.out.println("----------------------");
+		System.out.println("----- Work with files -----");
+		FileHandler fh = new FileHandler("data" + File.separator + "text.txt");
 		
-		
-		
+		fh.ShowFile();
 		
 		
 		
