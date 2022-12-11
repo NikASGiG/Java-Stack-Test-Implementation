@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.Scanner; // импорт класса Scanner
 
 import com.nikasgig.javacoretest.arraygenerator.ArrayGenerator;
+import com.nikasgig.javacoretest.arraygenerator.ArrayToList;
 
 public class JavaCoreTest {
 
@@ -152,9 +153,11 @@ public class JavaCoreTest {
 		System.out.println(t1234);
 		list.remove(1);
 		System.out.println(list.get(1));
-		
-		
-		
+		System.out.println("----------------------");
+		ArrayToList arrtolist = new ArrayToList();
+		List<Integer> masL = new ArrayList<Integer>();
+		masL = arrtolist.ToList(mas);
+		arrtolist.ListShow(masL);
 		
 		
 		
