@@ -1,6 +1,7 @@
 package com.nikasgig.javacoretest;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -161,12 +162,18 @@ public class JavaCoreTest {
 		arrtolist.ListShow(masL);
 		System.out.println("----------------------");
 		System.out.println("----- Work with files -----");
-		FileHandler fh = new FileHandler("data" + File.separator + "text.txt");
+		FileHandler fh = new FileHandler(File.separator + "data" + File.separator + "text.txt");
 		
 		fh.ShowFile();
-		
-		
-		
+		System.out.println("----------------------");
+		File db = new File("data" + File.separator + "db_test");		
+		try {
+			Scanner dbs = new Scanner(db);
+		} catch (FileNotFoundException e) {
+			System.out.println("I do not know what the problem");
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 		
 		
