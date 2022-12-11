@@ -186,7 +186,7 @@ public class JavaCoreTest {
 			
 		}
 		
-		// the problem was found
+		// the problem was found and fixed
 		
 		
 		
