@@ -1,4 +1,11 @@
 package com.nikasgig.javacoretest;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+
+
 import java.util.Scanner; // импорт класса Scanner
 
 import com.nikasgig.javacoretest.arraygenerator.ArrayGenerator;
@@ -129,6 +136,19 @@ public class JavaCoreTest {
 		double d = 123.456;
 		int i = (int)Math.round(d);
 		System.out.println(d + " " + i);
+		System.out.println("----- List mini test -----");
+		
+		
+		//import java.util.ArrayList;
+		//import java.util.List;
+		List<String> list = new ArrayList<String>();
+		list.add("zero");
+		list.add("one");
+		list.add("two");
+		list.add("three");
+		list.add("four");
+		System.out.println(list.get(1) + " " + list.get(2) + " " + list.get(3) + " " +list.get(4));
+		
 		
 		
 		
