@@ -10,6 +10,8 @@ import java.util.List;
 
 import java.util.Scanner; // импорт класса Scanner
 
+import javax.print.DocFlavor.URL;
+
 import com.nikasgig.javacoretest.arraygenerator.ArrayGenerator;
 import com.nikasgig.javacoretest.arraygenerator.ArrayToList;
 
@@ -170,12 +172,22 @@ public class JavaCoreTest {
 		try {
 			Scanner dbs = new Scanner(db);
 		} catch (FileNotFoundException e) {
-			System.out.println("I do not know what the problem");
+			System.out.println("I do not know what the problem, but...");
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			
+			File file1 = new File(File.separator+"com"+File.separator+"nikasgig"+File.separator+"javacoretest"+ File.separator +"data" + File.separator + "db_test");	
+			try {
+				Scanner dbs1 = new Scanner(file1);
+			} catch (FileNotFoundException e2) {
+				System.out.println("error");
+				// TODO Auto-generated catch block
+				e2.printStackTrace();
+			}
+			
 		}
 		
-		
+		// URL url = insertionSort.class.getResource("10_Random");
+		// File file = new File(url.toURI());
 		
 		
 		
