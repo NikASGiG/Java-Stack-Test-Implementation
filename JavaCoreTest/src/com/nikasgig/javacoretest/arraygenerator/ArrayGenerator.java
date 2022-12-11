@@ -8,7 +8,8 @@ public class ArrayGenerator {
 	private int[] mas;
 	private int num;
 	
-	
+	public ArrayGenerator() {
+	}
 	public ArrayGenerator(int num) {
 		
 		// TODO Auto-generated constructor stub

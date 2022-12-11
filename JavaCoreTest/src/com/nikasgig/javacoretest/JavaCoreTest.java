@@ -141,13 +141,20 @@ public class JavaCoreTest {
 		
 		//import java.util.ArrayList;
 		//import java.util.List;
-		List<String> list = new ArrayList<String>();
+		List<String> list = new ArrayList<>();
 		list.add("zero");
 		list.add("one");
 		list.add("two");
 		list.add("three");
 		list.add("four");
 		System.out.println(list.get(1) + " " + list.get(2) + " " + list.get(3) + " " +list.get(4));
+		String t1234 = list.get(1) + " " + list.get(2) + " " + list.get(3) + " " +list.get(4);
+		System.out.println(t1234);
+		list.remove(1);
+		System.out.println(list.get(1));
+		
+		
+		
 		
 		
 		
