@@ -124,6 +124,12 @@ public class JavaCoreTest {
 		masGen.ArrayShow();
 		masGen2.ArrayShow();
 		System.out.println("----------------------");
+		System.out.println("----- 11.12.2022 -----");
+		
+		double d = 123.456;
+		int i = (int)Math.round(d);
+		System.out.println(d + " " + i);
+		
 		
 		
 		
