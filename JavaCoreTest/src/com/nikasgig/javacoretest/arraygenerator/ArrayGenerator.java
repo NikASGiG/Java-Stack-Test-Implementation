@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class ArrayGenerator {
 
 	private int num_elemets;
-	private int[] mas;
+	protected int[] mas;
 	private int num;
 	
 	public ArrayGenerator() {

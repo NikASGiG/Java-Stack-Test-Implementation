@@ -1,5 +1,15 @@
 package com.nikasgig.javacoretest.arraygenerator;
 
-public class ArrayToList {
-
+public class ArrayToList extends ArrayGenerator{
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
