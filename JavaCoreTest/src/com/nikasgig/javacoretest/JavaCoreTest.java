@@ -221,9 +221,17 @@ public class JavaCoreTest {
 		System.out.println(doggy2.id + " " + doggy5.id); 
 		System.out.println(doggy2.id + doggy5.id); 
 		System.out.println("----------------------");
+		System.out.println(AnimalList.DOG);
+		AnimalList dog = AnimalList.DOG;
+		System.out.println(dog);
+		System.out.println(dog.getInfo());
 		
+		System.out.println(AnimalList.FISH.toString());
+		System.out.println(AnimalList.FISH.getInfo());
 		
-		
+		System.out.println(dog);
+		dog.setInfo("Dog? It is maybe corgi");
+		System.out.println(dog.getInfo());
 		
 		
 		
