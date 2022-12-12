@@ -189,6 +189,24 @@ public class JavaCoreTest {
 		// the problem was found and fixed
 		
 		
+		System.out.println("----- 12.12.2022 -----");
+		
+		Corgi doggy1 = new Corgi(1);
+		Corgi doggy2 = new Corgi(1);
+		Corgi doggy3 = new Corgi(2);
+		System.out.println(doggy1.equalsID(doggy2)); // true
+		System.out.println(doggy3.equalsID(doggy2)); // false
+		System.out.println(doggy3.equalsID(doggy1)); // false
+		System.out.println("----------------------");
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 	}
 

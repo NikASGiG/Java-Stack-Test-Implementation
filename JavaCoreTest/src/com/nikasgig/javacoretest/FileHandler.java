@@ -22,7 +22,7 @@ public class FileHandler {
 			
 			try {
 				
-				path = "C:"+sep+"Users"+sep+"NikAS GiG"+sep+"git"+sep+"Java-Stack-Test-Implementation"+sep+"JavaCoreTest"+sep+"src"+sep+"com"+sep+"nikasgig"+sep+"javacoretest"+sep+"data"+sep+"text.txt";
+				path = "src"+File.separator+"com"+File.separator+"nikasgig"+File.separator+"javacoretest"+ File.separator +"data" + File.separator +"text.txt";
 				this.path = path;
 				file = OpenFile(path);
 				fileScan = new Scanner(file);
