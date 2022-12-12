@@ -10,7 +10,7 @@ import java.util.List;
 
 import java.util.Scanner; // импорт класса Scanner
 
-import javax.print.DocFlavor.URL;
+//import javax.print.DocFlavor.URL;
 
 import com.nikasgig.javacoretest.arraygenerator.ArrayGenerator;
 import com.nikasgig.javacoretest.arraygenerator.ArrayToList;
@@ -198,9 +198,11 @@ public class JavaCoreTest {
 		System.out.println(doggy3.equalsID(doggy2)); // false
 		System.out.println(doggy3.equalsID(doggy1)); // false
 		System.out.println("----------------------");
-		
-		
-		
+		System.out.println("---- Write in file ----");
+		FileHandler FileIn = new FileHandler("asdasda");
+		FileIn.Write(var1 + var2); 
+		FileIn.pw.close();
+		System.out.println("----------------------");
 		
 		
 		
