@@ -232,6 +232,16 @@ public class JavaCoreTest {
 		System.out.println(dog);
 		dog.setInfo("Dog? It is maybe corgi");
 		System.out.println(dog.getInfo());
+		AnimalList dog2 = AnimalList.valueOf("DOG");
+		System.out.println(dog2.getInfo());
+		try {
+			AnimalList dog3 = AnimalList.valueOf("dog");
+			System.out.println(dog3.getInfo());
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println("Erorr, not found");
+		}
+		System.out.println("----------------------");
 		
 		
 		

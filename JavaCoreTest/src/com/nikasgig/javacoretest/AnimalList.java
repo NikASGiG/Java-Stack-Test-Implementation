@@ -12,7 +12,7 @@ public enum AnimalList {
 	
 	///////////
 	
-	public String info;
+	private String info;
 	
 	private AnimalList(String info) {
 		// TODO Auto-generated constructor stub
