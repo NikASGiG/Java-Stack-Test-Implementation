@@ -88,10 +88,11 @@ public class FileWriterObj {
 	}
 	
 	
-	public void Get(Object obj) {
+	public Corgi Get(Corgi obj) {
 		
 			try {
-				ois.readObject();
+				obj = (Corgi) ois.readObject();
+				
 			} catch (ClassNotFoundException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -99,6 +100,7 @@ public class FileWriterObj {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
+			return obj;
 	}
 	
 	

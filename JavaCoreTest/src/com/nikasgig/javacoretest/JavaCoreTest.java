@@ -207,7 +207,15 @@ public class JavaCoreTest {
 		fin.Add(doggy1);
 		fin.Add(doggy2);
 		fin.Add(doggy3);
-		fin.Close();
+		//fin.Close();
+		
+		Corgi doggy4 = fin.Get(doggy1);
+		Corgi doggy5 = fin.Get(doggy2);
+		Corgi doggy6 = fin.Get(doggy3);
+		
+		System.out.println(doggy4.equalsID(doggy5)); // true
+		System.out.println(doggy6.equalsID(doggy5)); // false
+		System.out.println(doggy6.equalsID(doggy4)); // false
 		
 		
 		
