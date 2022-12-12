@@ -242,8 +242,7 @@ public class JavaCoreTest {
 			System.out.println("Erorr, not found");
 		}
 		System.out.println("----------------------");
-		
-		
+		System.out.println(dog2.ordinal());
 		
 		
 		
