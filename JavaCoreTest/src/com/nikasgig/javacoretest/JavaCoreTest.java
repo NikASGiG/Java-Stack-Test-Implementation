@@ -203,10 +203,11 @@ public class JavaCoreTest {
 		FileIn.Write(var1 + var2); 
 		FileIn.pw.close();
 		System.out.println("----------------------");
-		FileHandler fin = new FileHandler("");
-		
-		
-		
+		FileWriterObj fin = new FileWriterObj("db_obj.bin");
+		fin.Add(doggy1);
+		fin.Add(doggy2);
+		fin.Add(doggy3);
+		fin.Close();
 		
 		
 		

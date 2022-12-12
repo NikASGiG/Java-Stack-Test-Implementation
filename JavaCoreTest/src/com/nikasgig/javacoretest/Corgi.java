@@ -1,6 +1,8 @@
 package com.nikasgig.javacoretest;
 
-public class Corgi extends Dog {
+import java.io.Serializable;
+
+public class Corgi extends Dog implements Serializable{
 
 	public String sort = "corgi";
 	public int id;
