@@ -216,6 +216,26 @@ public class JavaCoreTest {
 		System.out.println(doggy4.equalsID(doggy5)); // true
 		System.out.println(doggy6.equalsID(doggy5)); // false
 		System.out.println(doggy6.equalsID(doggy4)); // false
+		doggy2.doHunting();
+		doggy5.doHunting();
+		System.out.println(doggy2.id + " " + doggy5.id); 
+		System.out.println(doggy2.id + doggy5.id); 
+		System.out.println("----------------------");
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		
