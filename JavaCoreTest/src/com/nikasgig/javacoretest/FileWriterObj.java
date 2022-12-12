@@ -1,9 +1,11 @@
 package com.nikasgig.javacoretest;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.PrintWriter;
 
@@ -15,6 +17,10 @@ public class FileWriterObj {
 	public PrintWriter pw;
 	public FileOutputStream fos;
 	public ObjectOutputStream oos;
+	
+	
+	public FileInputStream fis;
+	public ObjectInputStream ois;
 	
 	public FileWriterObj(String path) {
 		this.path2 += path;
@@ -38,6 +44,22 @@ public class FileWriterObj {
 			System.out.println("File '" + path + "' is not open");
 			e.printStackTrace();
 		}
+		
+		//////////////////// fis ois
+		
+		try {
+			fis = new FileInputStream(path2);
+		} catch (FileNotFoundException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		try {
+			ois = new ObjectInputStream(fis);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 		
 		
 	}
@@ -66,7 +88,18 @@ public class FileWriterObj {
 	}
 	
 	
-	
+	public void Get(Object obj) {
+		
+			try {
+				ois.readObject();
+			} catch (ClassNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+	}
 	
 	
 	
