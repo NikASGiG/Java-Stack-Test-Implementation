@@ -241,8 +241,9 @@ public class JavaCoreTest {
 			// TODO: handle exception
 			System.out.println("Erorr, not found");
 		}
-		System.out.println("----------------------");
 		System.out.println(dog2.ordinal());
+		System.out.println("----------------------");
+		
 		
 		
 		
