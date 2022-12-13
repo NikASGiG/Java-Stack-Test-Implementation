@@ -1,4 +1,4 @@
 # Java-Stack-Test-Implementation
-I testing JavaCore here
+I testing JavaCore here.
 Learning Collection
 1. ArrayList
