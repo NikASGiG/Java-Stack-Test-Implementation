@@ -250,7 +250,7 @@ public class JavaCoreTest {
 		System.out.println("hihihi");
 		System.out.println("----------------------");
 		System.out.println("----------------------");
-		
+		System.out.println();
 		MainCollection collection = new MainCollection();
 		collection.main();
 		
