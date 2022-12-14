@@ -14,6 +14,7 @@ import java.util.Scanner; // импорт класса Scanner
 
 import com.nikasgig.javacoretest.arraygenerator.ArrayGenerator;
 import com.nikasgig.javacoretest.arraygenerator.ArrayToList;
+import com.nikasgig.javacoretest.collection.MainCollection;
 import com.nikasgig.javacoretest.recursion.RecursionDemo;
 
 public class JavaCoreTest {
@@ -249,16 +250,9 @@ public class JavaCoreTest {
 		System.out.println("hihihi");
 		System.out.println("----------------------");
 		System.out.println("----------------------");
-		System.out.println("----------------------");
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		System.out.println();
+		MainCollection collection = new MainCollection();
+		collection.main();
 		
 		
 		
