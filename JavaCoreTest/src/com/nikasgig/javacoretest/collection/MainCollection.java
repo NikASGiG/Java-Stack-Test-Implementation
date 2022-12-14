@@ -14,7 +14,7 @@ public class MainCollection {
 			list1.add("Antony");
 			list1.add("Maria");
 			list1.add("Oliver");
-			
+			System.out.println("----------------------");
 			
 			
 			
