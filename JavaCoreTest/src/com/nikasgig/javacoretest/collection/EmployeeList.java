@@ -1,6 +1,6 @@
 package com.nikasgig.javacoretest.collection;
 
-public class EmployeeList {
+public class EmployeeList implements Comparable<EmployeeList>{
 
 	private int id;
 	private String name;
@@ -14,6 +14,19 @@ public class EmployeeList {
 	@Override
 	public String toString() {
 		return "EmployeeList [id=" + id + ", name=" + name + ", salary=" + salary + "]";
+	}
+	@Override
+	public int compareTo(EmployeeList emp) {
+		if (this.id == emp.id) {
+			return 0;
+		}
+		else if (this.id > emp.id) {
+			return 0;
+		}
+		else {
+			return -1;
+		}
+		
 	}
 	
 	

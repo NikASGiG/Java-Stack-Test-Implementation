@@ -22,12 +22,20 @@ public class MainCollection {
 			System.out.println(list1);
 			System.out.println("----------------------");
 			
-			
-			
-			
-			
-			
-			
+			ArrayList<EmployeeList> list2 = new ArrayList<>();
+			EmployeeList emp1 = new EmployeeList(1, "Bill", 19000);
+			list2.add(emp1);
+			EmployeeList emp2 = new EmployeeList(9, "Mary", 1000);
+			list2.add(emp2);
+			EmployeeList emp3 = new EmployeeList(3, "Billy Jin", 4000);
+			list2.add(emp3);
+			EmployeeList emp4 = new EmployeeList(2, "Maks", 40000);
+			list2.add(emp4);
+			list2.add(emp1);
+			list2.add(emp1);
+			System.out.println(list2);
+			Collections.sort(list2);
+			System.out.println(list2);
 			
 			
 			
