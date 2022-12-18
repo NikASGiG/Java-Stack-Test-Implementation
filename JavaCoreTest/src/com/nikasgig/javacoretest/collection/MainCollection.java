@@ -1,6 +1,7 @@
 package com.nikasgig.javacoretest.collection;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class MainCollection {
 		public void main() {
@@ -15,10 +16,11 @@ public class MainCollection {
 			list1.add("Maria");
 			list1.add("Oliver");
 			System.out.println("----------------------");
-			
-			
-			
-			
+			System.out.println(list1);
+			System.out.println("----------------------");
+			Collections.sort(list1);
+			System.out.println(list1);
+			System.out.println("----------------------");
 			
 			
 			
