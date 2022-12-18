@@ -18,7 +18,16 @@ public class EmployeeList implements Comparable<EmployeeList>{
 	@Override
 	public int compareTo(EmployeeList emp) {
 		if (this.id == emp.id) {
-			return 0;
+			if (this.salary == emp.salary) {
+				return 0;
+			}
+			else if (this.salary > emp.salary) {
+				return 0;
+			}
+			else {
+				return -1;
+			}
+			//return 0;
 		}
 		else if (this.id > emp.id) {
 			return 0;

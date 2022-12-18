@@ -36,6 +36,11 @@ public class MainCollection {
 			System.out.println(list2);
 			Collections.sort(list2);
 			System.out.println(list2);
+			System.out.println("----------------------");
+			
+			
+			
+			
 			
 			
 			
