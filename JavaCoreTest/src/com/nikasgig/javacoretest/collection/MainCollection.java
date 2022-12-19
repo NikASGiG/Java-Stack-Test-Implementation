@@ -37,6 +37,11 @@ public class MainCollection {
 			Collections.sort(list2);
 			System.out.println(list2);
 			System.out.println("----------------------");
+			System.out.println("Generics"); // <> <String> <Integer>
+			System.out.println("----------------------");
+			System.out.println("Parameterized");
+			MyOwnList<String> parameterized1 = new MyOwnList<>("Hello");	
+			System.out.println(parameterized1);
 			
 			
 			
