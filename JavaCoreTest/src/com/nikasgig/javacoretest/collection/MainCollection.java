@@ -42,7 +42,8 @@ public class MainCollection {
 			System.out.println("Parameterized");
 			MyOwnList<String> parameterized1 = new MyOwnList<>("Hello");	
 			System.out.println(parameterized1);
-			
+			MyOwnList<Integer> parameterized2 = new MyOwnList<>(23);	
+			System.out.println(parameterized2);
 			
 			
 			
