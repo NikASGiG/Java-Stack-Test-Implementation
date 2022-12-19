@@ -15,6 +15,14 @@ public class MyOwnList <T>{
 	public String toString() {
 		return "MyOwnList [var=" + var + "]";
 	}
+
+	public T getVar() {
+		return var;
+	}
+
+	public void setVar(T var) {
+		this.var = var;
+	}
 	
 	
 	

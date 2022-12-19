@@ -44,6 +44,11 @@ public class MainCollection {
 			System.out.println(parameterized1);
 			MyOwnList<Integer> parameterized2 = new MyOwnList<>(23);	
 			System.out.println(parameterized2);
+			System.out.println(parameterized1.getVar());
+			parameterized1.setVar("Hi");
+			System.out.println(parameterized1.getVar());
+			System.out.println(parameterized1);
+			
 			
 			
 			
