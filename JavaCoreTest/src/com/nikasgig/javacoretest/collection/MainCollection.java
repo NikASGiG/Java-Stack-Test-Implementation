@@ -48,6 +48,10 @@ public class MainCollection {
 			parameterized1.setVar("Hi");
 			System.out.println(parameterized1.getVar());
 			System.out.println(parameterized1);
+			System.out.println("----------------------");
+			
+			MyOwnList3<Integer, Boolean, String> p3 = new MyOwnList3<Integer, Boolean, String>(1, true, "Yes");
+			System.out.println(p3);
 			
 			
 			
