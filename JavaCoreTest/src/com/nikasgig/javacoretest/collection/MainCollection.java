@@ -52,6 +52,8 @@ public class MainCollection {
 			
 			MyOwnList3<Integer, Boolean, String> p3 = new MyOwnList3<Integer, Boolean, String>(1, true, "Yes");
 			System.out.println(p3);
+			System.out.println("----------------------");
+			
 			
 			
 			
