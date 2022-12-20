@@ -61,7 +61,8 @@ public class MainCollection {
 			// we can't make overflow method with Generic
 			// This is type erasure
 			
-			
+			System.out.println("----- Continue Collection -----");
+			System.out.println("ArrayList");
 			
 			
 			
