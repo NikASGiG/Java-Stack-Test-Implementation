@@ -59,6 +59,11 @@ public class MainCollection {
 			System.out.println(pm.getSecond(list1));
 			System.out.println("----------------------");
 			// we can't make overflow method with Generic
+			// This is type erasure
+			
+			
+			
+			
 			
 			
 			
