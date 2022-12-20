@@ -63,10 +63,32 @@ public class MainCollection {
 			
 			System.out.println("----- Continue Collection -----");
 			System.out.println("ArrayList");
-			
-			
-			
-			
+			ArrayList<Integer> list3 = new ArrayList<Integer>();
+			list3.add(4);
+			list3.add(1, 5);
+			list3.add(2, 3);
+			list3.add(3, 8);
+			System.out.println(list3);
+			for (Integer i : list3) {
+				System.out.print(i + " ");
+			}System.out.println();
+			System.out.println(list3.get(0)); //4
+			for (int i = 0; i < list3.size(); i++) {
+				System.out.print(list3.get(i) + " ");
+			}System.out.println();
+			System.out.println("----------------------");
+			System.out.println(list3.get(3));
+			list3.set(3, 888);
+			System.out.println(list3.get(3));
+			System.out.println("----------------------");
+			System.out.println(list3);
+			//System.out.println(list3.size()); 4
+			int list3size = list3.size();
+			int i1 = 1;
+			for (int i = 1; i < list3size; i++) {
+				list3.remove(i1);
+			}
+			System.out.println(list3);
 			
 			
 			
