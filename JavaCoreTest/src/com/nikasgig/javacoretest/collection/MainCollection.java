@@ -39,7 +39,7 @@ public class MainCollection {
 			System.out.println("----------------------");
 			System.out.println("Generics"); // <> <String> <Integer>
 			System.out.println("----------------------");
-			System.out.println("Parameterized");
+			System.out.println("Parameterized class");
 			MyOwnList<String> parameterized1 = new MyOwnList<>("Hello");	
 			System.out.println(parameterized1);
 			MyOwnList<Integer> parameterized2 = new MyOwnList<>(23);	
@@ -53,6 +53,10 @@ public class MainCollection {
 			MyOwnList3<Integer, Boolean, String> p3 = new MyOwnList3<Integer, Boolean, String>(1, true, "Yes");
 			System.out.println(p3);
 			System.out.println("----------------------");
+			System.out.println("Parameterized method");
+			System.out.println(list1);
+			ParameterizedMethod pm = new ParameterizedMethod();
+			System.out.println(pm.getSecond(list1));
 			
 			
 			
