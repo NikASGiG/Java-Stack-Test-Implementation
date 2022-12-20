@@ -10,6 +10,8 @@ import java.util.List;
 
 import java.util.Scanner; // импорт класса Scanner
 
+import com.nikasgig.javacoretest.WinApp.MainApp;
+
 //import javax.print.DocFlavor.URL;
 
 import com.nikasgig.javacoretest.arraygenerator.ArrayGenerator;
@@ -254,6 +256,11 @@ public class JavaCoreTest {
 		MainCollection collection = new MainCollection();
 		collection.main();
 		
+		// /*
+		System.out.println("----------------------");
+		MainApp mainapp = new MainApp();
+		mainapp.mainMethod();
+		// */
 		
 		
 	}
