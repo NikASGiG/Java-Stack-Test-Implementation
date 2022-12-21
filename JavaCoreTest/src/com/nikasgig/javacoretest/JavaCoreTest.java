@@ -256,11 +256,13 @@ public class JavaCoreTest {
 		MainCollection collection = new MainCollection();
 		collection.main();
 		
-		// /*
+		/*
 		System.out.println("----------------------");
 		MainApp mainapp = new MainApp();
 		mainapp.mainMethod();
-		// */
+		MainApp mainapp1 = new MainApp();
+		mainapp1.mainMethod();
+		*/
 		
 		
 	}
