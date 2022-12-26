@@ -103,6 +103,12 @@ public class MainCollection {
 			list4.addAll(1, list1);
 			System.out.println(list4);
 			System.out.println("----------------------");
+			System.out.println(list1);
+			list1.clear();
+			System.out.println(list1);
+			
+			
+			
 			
 			
 			
