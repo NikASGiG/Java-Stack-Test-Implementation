@@ -115,7 +115,7 @@ public class MainCollection {
 			System.out.println(list4.isEmpty());
 			System.out.println("----------------------");
 			System.out.println(list4.contains("!!!"));
-			System.out.println(list4.contains("!Antony!")); // -1 // is not found
+			System.out.println(list4.contains("!Antony!")); // is not found
 			System.out.println(list4.contains("Antony")); 
 			System.out.println("----------------------");
 			
