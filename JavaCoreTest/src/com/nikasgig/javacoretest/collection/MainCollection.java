@@ -111,8 +111,8 @@ public class MainCollection {
 			System.out.println(list4.indexOf("!Antony!")); // -1 // is not found
 			System.out.println(list4.indexOf("Antony")); // had found only first
 			System.out.println("----------------------");
-			
-			
+			System.out.println(list1.isEmpty());
+			System.out.println(list4.isEmpty());
 			
 			
 			
