@@ -90,14 +90,19 @@ public class MainCollection {
 			}
 			System.out.println(list3);
 			
+			System.out.println("----------------------");
 			
-			
-			
-			
-			
-			
-			
-			
+			System.out.println(list1);
+			ArrayList<String> list4 = new ArrayList<>();
+			list4.add("!");
+			list4.add("!!");
+			list4.add("!!!");
+			System.out.println(list4);
+			list4.addAll(list1);
+			System.out.println(list4);
+			list4.addAll(1, list1);
+			System.out.println(list4);
+			System.out.println("----------------------");
 			
 			
 			
