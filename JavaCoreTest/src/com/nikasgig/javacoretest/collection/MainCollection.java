@@ -106,6 +106,12 @@ public class MainCollection {
 			System.out.println(list1);
 			list1.clear();
 			System.out.println(list1);
+			System.out.println("----------------------");
+			System.out.println(list4.indexOf("!!!"));
+			System.out.println(list4.indexOf("!Antony!")); // -1 // is not found
+			System.out.println(list4.indexOf("Antony")); // had found only first
+			System.out.println("----------------------");
+			
 			
 			
 			
