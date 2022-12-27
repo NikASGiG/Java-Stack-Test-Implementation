@@ -146,7 +146,11 @@ public class MainCollection {
 			System.out.println(list42);
 			System.out.println(list43);
 			list42.removeAll(list43);
+			System.out.println(list42); // [first1, third]
+			System.out.println("----------------------");
+			list42.retainAll(list43);
 			System.out.println(list42);
+			
 			
 			
 			
