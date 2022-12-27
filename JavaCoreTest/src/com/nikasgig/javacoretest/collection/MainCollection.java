@@ -132,8 +132,8 @@ public class MainCollection {
 			System.out.println("strArr[] = " + strArr);
 			java.util.List<StringBuilder> strList = Arrays.asList(strArr); // java.util.List<StringBuilder>
 			System.out.println(strList);
-			
-			
+			strArr[1].append("22222");
+			System.out.println(strList);
 			
 			
 			
