@@ -150,6 +150,9 @@ public class MainCollection {
 			System.out.println("----------------------");
 			list42.retainAll(list43);
 			System.out.println(list42);
+			System.out.println("----------------------");
+			
+			System.out.println(list42.containsAll(list43));
 			
 			
 			
