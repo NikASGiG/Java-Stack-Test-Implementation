@@ -1,6 +1,8 @@
 package com.nikasgig.javacoretest.collection;
 
+import java.awt.List;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 
 public class MainCollection {
@@ -119,7 +121,17 @@ public class MainCollection {
 			System.out.println(list4.contains("Antony")); 
 			System.out.println("----------------------");
 			
+			StringBuilder str1 = new StringBuilder("str1text");
+			StringBuilder str2 = new StringBuilder("str2text");
+			StringBuilder str3 = new StringBuilder("str3text");
+			StringBuilder str4 = new StringBuilder("str4text");
+			StringBuilder str5 = new StringBuilder("str5text");
+			StringBuilder str6 = new StringBuilder("str6text");
+			StringBuilder[] strArr = {str1, str2, str3, str4, str5, str6};
 			
+			System.out.println("strArr[] = " + strArr);
+			java.util.List<StringBuilder> strList = Arrays.asList(strArr); // java.util.List<StringBuilder>
+			System.out.println(strList);
 			
 			
 			
