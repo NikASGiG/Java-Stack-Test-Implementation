@@ -167,9 +167,15 @@ public class MainCollection {
 				System.out.print(iter1.next() + " ");
 				
 			} System.out.println();
-			
-			
-			
+			System.out.println("----------------------");
+			System.out.println(list5);
+			Iterator<String> iter2 = list5.iterator();
+			while (iter2.hasNext()) {
+				iter2.next();
+				iter2.remove();
+				
+			} System.out.println();
+			System.out.println(list5);
 			
 			
 			
