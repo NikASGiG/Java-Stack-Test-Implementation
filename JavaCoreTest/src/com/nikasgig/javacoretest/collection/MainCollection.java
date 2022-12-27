@@ -134,7 +134,19 @@ public class MainCollection {
 			System.out.println(strList);
 			strArr[1].append("22222");
 			System.out.println(strList);
-			
+			System.out.println("----------------------");
+			ArrayList<String> list42 = new ArrayList<String>();
+			ArrayList<String> list43 = new ArrayList<String>();
+			list42.add("first1");
+			list42.add("second1");
+			list42.add("third");
+			list43.add("first2");
+			list43.add("second1");
+			list43.add("third2");
+			System.out.println(list42);
+			System.out.println(list43);
+			list42.removeAll(list43);
+			System.out.println(list42);
 			
 			
 			
