@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Iterator;
+import java.util.LinkedList;
 
 public class MainCollection {
 		public void main() {
@@ -176,6 +177,23 @@ public class MainCollection {
 				
 			} System.out.println();
 			System.out.println(list5);
+			System.out.println("----------------------");
+			System.out.println("LinkedList");
+			LinkedList<String> ll = new LinkedList<String>();
+			ll.add("Misha");
+			ll.add("Valerian");
+			ll.add("Antony");
+			ll.add("Maria");
+			ll.add("Oliver");
+			System.out.println(ll);
+			
+			
+			
+			
+			
+			
+			
+			
 			
 			
 			
