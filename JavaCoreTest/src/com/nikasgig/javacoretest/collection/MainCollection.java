@@ -4,6 +4,7 @@ import java.awt.List;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Iterator;
 
 public class MainCollection {
 		public void main() {
@@ -153,9 +154,19 @@ public class MainCollection {
 			System.out.println("----------------------");
 			
 			System.out.println(list42.containsAll(list43));
+			System.out.println("----------------------");
 			
-			
-			
+			ArrayList<String> list5 = new ArrayList<String>();
+			list5.add("Misha");
+			list5.add("Valerian");
+			list5.add("Antony");
+			list5.add("Maria");
+			list5.add("Oliver");
+			Iterator<String> iter1 = list5.iterator();
+			while (iter1.hasNext()) {
+				System.out.print(iter1.next() + " ");
+				
+			} System.out.println();
 			
 			
 			
