@@ -186,10 +186,11 @@ public class MainCollection {
 			ll.add("Maria");
 			ll.add("Oliver");
 			System.out.println(ll);
-			
-			
-			
-			
+			System.out.println("----------------------");
+			System.out.println("ListIterator");
+			ListIterator listIterator = new ListIterator();
+			listIterator.main();
+			System.out.println("----------------------");
 			
 			
 			
