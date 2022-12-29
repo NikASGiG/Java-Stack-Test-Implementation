@@ -191,7 +191,13 @@ public class MainCollection {
 			ListIterator listIterator = new ListIterator();
 			listIterator.main();
 			System.out.println("----------------------");
-			
+			System.out.println("BinarySearch");
+			BinarySearch bin = new BinarySearch();
+			bin.genRandomNumToList(300);
+			bin.showList();
+			bin.Sort();
+			bin.showList();
+			bin.search(100);
 			
 			
 			
