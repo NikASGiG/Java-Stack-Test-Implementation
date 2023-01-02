@@ -6,6 +6,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.Stack;
 import java.util.Vector;
 
 public class MainCollection {
@@ -216,10 +217,32 @@ public class MainCollection {
 			System.out.println(vec);
 			System.out.println(vec.get(1));
 			System.out.println("----------------------");
+			System.out.println("Stack");
+			System.out.println("Do not recommend for using");
 			
+			Stack<String> stack = new Stack<String>();
+			stack.push("Misha");
+			stack.push("Valerian");
+			stack.push("Antony");
+			stack.push("Maria");
+			stack.push("Oliver");
+
+			while (!stack.isEmpty()) {
+				System.out.println(stack.pop());
+				System.out.println(stack);
+			}
 			
+			System.out.println("----------------------");
 			
-			
+			Stack<String> stack1 = new Stack<String>();
+			stack1.push("Misha");
+			stack1.push("Valerian");
+			stack1.push("Antony");
+			stack1.push("Maria");
+			stack1.push("Oliver");
+			System.out.println(stack1);
+			System.out.println(stack1.peek());
+			System.out.println("----------------------");
 			
 			
 			
