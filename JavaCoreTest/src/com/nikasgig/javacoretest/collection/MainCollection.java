@@ -214,6 +214,7 @@ public class MainCollection {
 			System.out.println(vec.lastElement());
 			vec.remove(1);
 			System.out.println(vec);
+			System.out.println(vec.get(1));
 			System.out.println("----------------------");
 			
 			
