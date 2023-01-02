@@ -4,8 +4,10 @@ import java.awt.List;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.Map;
 import java.util.Stack;
 import java.util.Vector;
 
@@ -243,6 +245,33 @@ public class MainCollection {
 			System.out.println(stack1);
 			System.out.println(stack1.peek());
 			System.out.println("----------------------");
+			
+			System.out.println("Map");
+			Map<Integer, String> map = new HashMap<Integer, String>();
+			map.put(1234, "Misha Maradona");
+			map.put(2345, "Valerian King");
+			map.put(3456, "Antony American");
+			map.put(4567, "Maria Blood");
+			map.put(5678, "Oliver Biscuit");
+			System.out.println(map);
+			map.putIfAbsent(1234, "qwer qwer");
+			map.putIfAbsent(1234, "asdfzxcv zxvvzv");
+			System.out.println(map);
+			map.remove(1234);
+			System.out.println(map);
+			System.out.println(map.containsValue("Antony American")); // true
+			System.out.println(map.containsKey(23456)); // false
+			System.out.println("----------------------");
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 			
 			
 			
