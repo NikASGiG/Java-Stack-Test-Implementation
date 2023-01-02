@@ -6,6 +6,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.Vector;
 
 public class MainCollection {
 		public void main() {
@@ -198,6 +199,27 @@ public class MainCollection {
 			bin.Sort();
 			bin.showList();
 			bin.search(100);
+			System.out.println("----------------------");
+			System.out.println("Vector");
+			System.out.println("Do not recommend for using");
+			
+			Vector<String> vec = new Vector<String>();
+			vec.add("Misha");
+			vec.add("Valerian");
+			vec.add("Antony");
+			vec.add("Maria");
+			vec.add("Oliver");
+			System.out.println(vec);
+			System.out.println(vec.firstElement());
+			System.out.println(vec.lastElement());
+			vec.remove(1);
+			System.out.println(vec);
+			System.out.println("----------------------");
+			
+			
+			
+			
+			
 			
 			
 			
