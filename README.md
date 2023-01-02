@@ -10,6 +10,7 @@ Learning Collection
 2. LinkedList
 3. Vector
 4. Stack
+5. Map
 
 
 Windows Applocation
