@@ -6,6 +6,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.Map;
 import java.util.Stack;
@@ -267,8 +268,15 @@ public class MainCollection {
 				System.out.println(entry.getKey() + ":" + entry.getValue());
 			}
 			
-			
-			
+			System.out.println("----------------------");
+			System.out.println("LinkedHashMap");
+			LinkedHashMap<Integer, String> mapLink = new LinkedHashMap<Integer, String>();
+			mapLink.put(1234, "Misha Maradona");
+			mapLink.put(2345, "Valerian King");
+			mapLink.put(3456, "Antony American");
+			mapLink.put(4567, "Maria Blood");
+			mapLink.put(5678, "Oliver Biscuit");
+			System.out.println(mapLink);
 			
 			
 			
