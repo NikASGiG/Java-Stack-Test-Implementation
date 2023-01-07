@@ -12,6 +12,7 @@ Learning Collection
 4. Stack
 5. Map
 6. HashMap
+7. LinkedHashMap
 
 
 Windows Applocation
