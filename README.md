@@ -11,6 +11,7 @@ Learning Collection
 3. Vector
 4. Stack
 5. Map
+6. HashMap
 
 
 Windows Applocation
