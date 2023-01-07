@@ -262,6 +262,11 @@ public class MainCollection {
 			System.out.println(map.containsValue("Antony American")); // true
 			System.out.println(map.containsKey(23456)); // false
 			System.out.println("----------------------");
+			System.out.println("HashMap");
+			for (Map.Entry<Integer, String> entry: map.entrySet()) {
+				System.out.println(entry.getKey() + ":" + entry.getValue());
+			}
+			
 			
 			
 			

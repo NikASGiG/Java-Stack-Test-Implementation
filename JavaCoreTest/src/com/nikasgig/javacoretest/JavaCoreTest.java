@@ -19,6 +19,8 @@ import com.nikasgig.javacoretest.arraygenerator.ArrayToList;
 import com.nikasgig.javacoretest.collection.MainCollection;
 import com.nikasgig.javacoretest.recursion.RecursionDemo;
 
+
+
 public class JavaCoreTest {
 
 	public static void main(String[] args) {
@@ -263,6 +265,7 @@ public class JavaCoreTest {
 		MainApp mainapp1 = new MainApp();
 		mainapp1.mainMethod();
 		*/
+		
 		
 		
 	}
