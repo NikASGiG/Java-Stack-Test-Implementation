@@ -12,6 +12,7 @@ import java.util.LinkedList;
 import java.util.Map;
 import java.util.Set;
 import java.util.Stack;
+import java.util.TreeSet;
 import java.util.Vector;
 
 public class MainCollection {
@@ -326,6 +327,21 @@ public class MainCollection {
 			Set<String> removeSet = new HashSet<String>(set);
 			removeSet.removeAll(set1);
 			System.out.println(removeSet);
+			System.out.println("----------------------");
+			
+			Set<Integer> tree = new TreeSet<Integer>();
+			tree.add(3);
+			tree.add(9);
+			tree.add(2);
+			tree.add(6);
+			tree.add(2);
+			tree.add(1);
+			tree.add(10);
+			System.out.println(tree);
+			
+			
+			
+			
 			
 			
 			
