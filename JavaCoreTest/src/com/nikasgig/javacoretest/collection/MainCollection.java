@@ -5,10 +5,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.Map;
+import java.util.Set;
 import java.util.Stack;
 import java.util.Vector;
 
@@ -278,10 +280,26 @@ public class MainCollection {
 			mapLink.put(5678, "Oliver Biscuit");
 			System.out.println(mapLink);
 			
-			
-			
-			
-			
+			System.out.println("----------------------");
+			System.out.println("HashSet");
+			Set<String> set = new HashSet<String>();
+			set.add(null);
+			set.add("Misha");
+			set.add("Valerian");
+			set.add("Antony");
+			set.add("Maria");
+			set.add("Oliver");
+			System.out.println(set);
+			set.add(null);
+			set.add("Oliver");
+			set.add(null);
+			set.add("Oliver");
+			set.add(null);
+			set.add("Oliver");
+			set.add("no");
+			set.add(null);
+			set.add("Oliver");
+			System.out.println(set);
 			
 			
 			
