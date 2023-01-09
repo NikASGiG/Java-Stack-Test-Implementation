@@ -328,7 +328,7 @@ public class MainCollection {
 			removeSet.removeAll(set1);
 			System.out.println(removeSet);
 			System.out.println("----------------------");
-			
+			System.out.println("TreeSet");
 			Set<Integer> tree = new TreeSet<Integer>();
 			tree.add(3);
 			tree.add(9);
@@ -338,9 +338,14 @@ public class MainCollection {
 			tree.add(1);
 			tree.add(10);
 			System.out.println(tree);
-			
-			
-			
+			System.out.println(tree.size());
+			System.out.println(tree.isEmpty()); //false
+			System.out.println(tree.contains(1)); // true
+			System.out.println(tree.remove(1));
+			System.out.println();
+			System.out.println(tree.contains(1)); // false
+			System.out.println(tree.size());
+			System.out.println(tree);
 			
 			
 			
