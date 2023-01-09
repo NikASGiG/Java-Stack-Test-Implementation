@@ -13,6 +13,8 @@ Learning Collection
 5. Map
 6. HashMap
 7. LinkedHashMap
+8. Set
+9. HashSet TreeSet LinkedHashSet
 
 
 Windows Applocation
