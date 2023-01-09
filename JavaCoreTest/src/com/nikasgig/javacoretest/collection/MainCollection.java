@@ -300,8 +300,24 @@ public class MainCollection {
 			set.add(null);
 			set.add("Oliver");
 			System.out.println(set);
-			
-			
+			set.remove("Antony");
+			set.remove("no");
+			set.remove(null);
+			System.out.println(set);
+			System.out.println(set.size());
+			System.out.println(set.isEmpty()); //false
+			System.out.println(set.contains("Antony")); // false
+			System.out.println("----------------------");
+			Set<String> set1 = new HashSet<String>();
+			set1.add(null);
+			set1.add("Misha");
+			set1.add("Valerian");
+			set1.add("Antony");
+			set1.add("Maria");
+			set1.add("Oliver");
+			Set<String> unionSet = new HashSet<String>(set);
+			unionSet.addAll(set1);
+			System.out.println(unionSet);
 			
 			
 			
