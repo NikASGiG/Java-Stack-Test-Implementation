@@ -311,7 +311,7 @@ public class MainCollection {
 			Set<String> set1 = new HashSet<String>();
 			set1.add(null);
 			set1.add("Misha");
-			set1.add("Valerian");
+			set1.add("Valerian111");
 			set1.add("Antony");
 			set1.add("Maria");
 			set1.add("Oliver");
@@ -319,6 +319,13 @@ public class MainCollection {
 			unionSet.addAll(set1);
 			System.out.println(unionSet);
 			
+			Set<String> reteinSet = new HashSet<String>(set);
+			reteinSet.retainAll(set1);
+			System.out.println(reteinSet);
+			
+			Set<String> removeSet = new HashSet<String>(set);
+			removeSet.removeAll(set1);
+			System.out.println(removeSet);
 			
 			
 			
