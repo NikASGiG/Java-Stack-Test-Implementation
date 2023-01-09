@@ -8,6 +8,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.Map;
 import java.util.Set;
@@ -346,9 +347,23 @@ public class MainCollection {
 			System.out.println(tree.contains(1)); // false
 			System.out.println(tree.size());
 			System.out.println(tree);
-			
-			
-			
+			System.out.println("----------------------");
+			System.out.println("LinkedHashSet");
+			Set<Integer> treelink = new LinkedHashSet<Integer>();
+			treelink.add(3);
+			treelink.add(9);
+			treelink.add(2);
+			treelink.add(6);
+			treelink.add(2);
+			treelink.add(1);
+			treelink.add(10);
+			System.out.println(treelink);
+			System.out.println(treelink.size());
+			System.out.println(treelink.isEmpty()); //false
+			System.out.println(treelink.contains(1)); // true
+			System.out.println(treelink.remove(1));
+			System.out.println(treelink.size());
+			System.out.println("----------------------");
 			
 			
 			
