@@ -3,6 +3,7 @@ package com.nikasgig.javacoretest.collection;
 import java.awt.List;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -11,6 +12,7 @@ import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.Map;
+import java.util.Queue;
 import java.util.Set;
 import java.util.Stack;
 import java.util.TreeSet;
@@ -364,6 +366,46 @@ public class MainCollection {
 			System.out.println(treelink.remove(1));
 			System.out.println(treelink.size());
 			System.out.println("----------------------");
+			System.out.println("Queue");
+			Queue<String> q = new LinkedList<String>();
+			q.add("Misha");
+			q.add("Valerian111");
+			q.add("Antony");
+			q.add("Maria");
+			q.add("Oliver");
+			System.out.println(q);
+			q.remove();
+			System.out.println(q.remove());
+			System.out.println(q); // [Antony, Maria, Oliver]
+			for (int i = 0; i < 100; i++) {
+				q.poll();
+			}
+			System.out.println(q); // []
+			System.out.println("----------------------");
+			Queue<String> q1 = new LinkedList<String>();
+			q1.offer("Misha");
+			q1.offer("Valerian111");
+			q1.offer("Antony");
+			q1.offer("Maria");
+			q1.offer("Oliver");
+			System.out.println(q1);
+			for (int i = 0; i < 100; i++) {
+				try {
+					System.out.print(q1.element() + ", ");
+					System.out.print(q1.remove() + ", ");
+				} catch (Exception e) {
+					System.out.print(q1.peek() + ", ");
+					System.out.print(q1.poll() + ", ");
+				}
+			}System.out.println();
+			System.out.println(q1);
+			
+			
+			
+			
+			
+			
+			
 			
 			
 			
