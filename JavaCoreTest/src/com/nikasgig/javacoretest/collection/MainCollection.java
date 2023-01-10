@@ -1,10 +1,12 @@
 package com.nikasgig.javacoretest.collection;
 
 import java.awt.List;
+import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.Deque;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -416,6 +418,44 @@ public class MainCollection {
 			System.out.println(pri);
 			System.out.println(pri.remove());
 			System.out.println(pri); // what is it???
+			System.out.println("----------------------");
+			System.out.println("Deque");
+			Deque<String> dq = new ArrayDeque<String>();
+			dq.addFirst("first 1");
+			dq.addLast("last 1");
+			System.out.println(dq);
+			dq.addFirst("first 2");
+			dq.addFirst("first 3");
+			dq.addFirst("first 4");
+			dq.addLast("last 2");
+			dq.addLast("last 3");
+			dq.addLast("last 4");
+			dq.addLast("last 5");
+			dq.addLast("last 6");
+			System.out.println(dq);
+			for (int i = 0; i < 4; i++) {
+				dq.removeFirst();
+				dq.removeLast();
+				System.out.println(dq);
+			}
+			System.out.println(dq);
+			dq.removeFirst();
+			System.out.println(dq);
+			dq.addLast("last 1");
+			System.out.println(dq);
+			dq.removeLast();
+			System.out.println(dq);
+			dq.addLast("last 1111");
+			System.out.println(dq);
+			System.out.println(dq.getFirst());
+			System.out.println(dq.peekFirst());
+			
+			System.out.println(dq.getLast());
+			System.out.println(dq.peekLast());
+			System.out.println("----------------------");
+			
+			
+			
 			
 			
 			
