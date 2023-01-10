@@ -12,6 +12,7 @@ import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.Map;
+import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.Set;
 import java.util.Stack;
@@ -399,13 +400,22 @@ public class MainCollection {
 				}
 			}System.out.println();
 			System.out.println(q1);
-			
-			
-			
-			
-			
-			
-			
+			System.out.println("----------------------");
+			System.out.println("PriorityQueue");
+			PriorityQueue<Integer> pri = new PriorityQueue<Integer>();
+			pri.add(3);
+			pri.add(9);
+			pri.add(2);
+			pri.add(6);
+			pri.add(2);
+			pri.add(1);
+			pri.add(10);
+			System.out.println(pri);
+			System.out.println(pri.remove());
+			System.out.println(pri);
+			System.out.println(pri);
+			System.out.println(pri.remove());
+			System.out.println(pri); // what is it???
 			
 			
 			
