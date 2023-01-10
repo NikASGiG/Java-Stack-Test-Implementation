@@ -15,6 +15,7 @@ Learning Collection
 7. LinkedHashMap
 8. Set
 9. HashSet TreeSet LinkedHashSet
+10. Queue PriorityQueue
 
 
 Windows Applocation
