@@ -19,10 +19,12 @@ public class Nested {
 		LocalInner loc = new LocalInner();
 		loc.calc(5, 2);
 		loc.calc(230, 600);
-		
-		
-		
-		
+		System.out.println("----------------------");
+		System.out.println("Anonymous Class");
+		AnonymousClass ac = new AnonymousClass();
+		System.out.println(ac.m.doDo(3, 4));
+		System.out.println(ac.m2.doDo(3, 4));
+		System.out.println("----------------------");
 		
 		
 		
