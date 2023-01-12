@@ -16,6 +16,7 @@ Learning Collection
 8. Set
 9. HashSet TreeSet LinkedHashSet
 10. Queue PriorityQueue
+11. Nested Classes
 
 
 Windows Applocation
