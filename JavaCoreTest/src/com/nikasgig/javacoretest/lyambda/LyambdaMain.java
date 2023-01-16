@@ -25,10 +25,11 @@ public class LyambdaMain {
 		arr.add(st7);
 		System.out.println(arr);
 		SortStudent.showTopAge(arr);
-		
-		
-		
-		
+		System.out.println("----------------------");
+		ArrayList<Student> arr1 = new ArrayList<Student>();
+		arr1.add(st7);
+		System.out.println(arr1);
+		SortStudent.showTopAge(arr1);
 		
 		
 		
