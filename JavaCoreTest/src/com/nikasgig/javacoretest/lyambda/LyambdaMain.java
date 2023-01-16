@@ -6,7 +6,7 @@ public class LyambdaMain {
 
 	public void main(){
 		
-		
+		System.out.println("Lyambda");
 		Student st1 = new Student("Misha", 18, true, 80.4);
 		Student st2 = new Student("Antony", 18, true, 62.9);
 		Student st3 = new Student("Valerian", 22, true, 82.9);
@@ -24,7 +24,7 @@ public class LyambdaMain {
 		arr.add(st6);
 		arr.add(st7);
 		System.out.println(arr);
-		
+		SortStudent.showTopAge(arr);
 		
 		
 		
