@@ -17,6 +17,7 @@ import com.nikasgig.javacoretest.WinApp.MainApp;
 import com.nikasgig.javacoretest.arraygenerator.ArrayGenerator;
 import com.nikasgig.javacoretest.arraygenerator.ArrayToList;
 import com.nikasgig.javacoretest.collection.MainCollection;
+import com.nikasgig.javacoretest.lyambda.LyambdaMain;
 import com.nikasgig.javacoretest.nestedclasses.Nested;
 import com.nikasgig.javacoretest.recursion.RecursionDemo;
 
@@ -270,6 +271,13 @@ public class JavaCoreTest {
 		System.out.println("----------------------");
 		Nested nested = new Nested();
 		nested.main();
+		
+		
+		// Lyambda
+		
+		System.out.println("----------------------");
+		LyambdaMain lm = new LyambdaMain();
+		lm.main();
 		
 		
 		
