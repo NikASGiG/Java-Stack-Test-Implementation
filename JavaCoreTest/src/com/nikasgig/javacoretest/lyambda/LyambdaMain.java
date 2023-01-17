@@ -39,11 +39,9 @@ public class LyambdaMain {
 		System.out.println("Example of "	+ "Lyambda");
 		System.out.println(arr);
 		
-		// SortStudent.showTopAge(arr, (Student s) -> { System.out.println("lambda method"); }); 
+		//SortStudent.def("sdf", (Student s) -> { System.out.println("lambda method"); }); //def("sdf", (Student s) -> { System.out.println("lambda method"); }); 
 		
-		//static void def(LyambdaTest lt) {
-		//	System.out.println("lambda method " + lt.check(st1));
-		//}
+		
 		
 		
 		

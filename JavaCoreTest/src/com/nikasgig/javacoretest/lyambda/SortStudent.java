@@ -105,8 +105,15 @@ public class SortStudent {
 	
 	
 	
-	
-	
+
+	static void def(LyambdaTest lt) {
+		System.out.printf("lambda method ", lt.check("holla"));
+	}
+
+	public static void def(String string, Object object) {
+		// TODO Auto-generated method stub
+		System.out.printf("lambda method " + "holla");
+	}
 	
 	
 	
@@ -114,7 +121,7 @@ public class SortStudent {
 
 interface LyambdaTest{
 
-	void check(Student s);
+	Object[] check(String s);
 
 }
 
