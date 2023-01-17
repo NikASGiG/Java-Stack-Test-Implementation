@@ -2,6 +2,8 @@ package com.nikasgig.javacoretest.lyambda;
 
 import java.util.ArrayList;
 
+import javax.lang.model.element.Element;
+
 public class LyambdaMain {
 
 	public void main(){
@@ -40,6 +42,37 @@ public class LyambdaMain {
 		System.out.println(arr);
 		
 		//SortStudent.def("sdf", (Student s) -> { System.out.println("lambda method"); }); //def("sdf", (Student s) -> { System.out.println("lambda method"); }); 
+		
+		System.out.println("----------------------");
+		System.out.println("java.util.function");
+		System.out.println("----------------------");
+		System.out.println("Predicate");
+		
+		ArrayList<String> al = new ArrayList<String>();
+		al.add("qwerty");
+		al.add("qwert");
+		al.add("qwer");
+		al.add("erty");
+		al.add("werty");
+		al.add("qwerty2");
+		System.out.println(al);
+		al.removeIf(el -> el.length() == 4);
+		System.out.println(al);
+		al.removeIf(el -> el.length() >= 6);
+		System.out.println(al);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		
