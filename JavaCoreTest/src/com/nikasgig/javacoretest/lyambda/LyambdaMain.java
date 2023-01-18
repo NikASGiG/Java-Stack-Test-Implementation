@@ -60,6 +60,13 @@ public class LyambdaMain {
 		System.out.println(al);
 		al.removeIf(el -> el.length() >= 6);
 		System.out.println(al);
+		System.out.println("----------------------");
+		System.out.println("Supplier");
+		
+		//SortStudent.createThreeStudent(StudentSupplier);
+		ArrayList<Student> cts = SortStudent.createThreeStudent(() -> new Student("Ivan", 18, true, 75)); 
+		System.out.println(cts); // 3
+		
 		
 		
 		

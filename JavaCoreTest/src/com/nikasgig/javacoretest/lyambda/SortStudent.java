@@ -2,6 +2,7 @@ package com.nikasgig.javacoretest.lyambda;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.function.Supplier;
 
 public class SortStudent {
 
@@ -115,8 +116,14 @@ public class SortStudent {
 		System.out.printf("lambda method " + "holla");
 	}
 	
+	public static ArrayList<Student> createThreeStudent (Supplier<Student> StudentSupplier) {
+		ArrayList<Student> al = new ArrayList<>();
+		for (int i = 0; i < 3; i++) {
+		al.add(StudentSupplier.get ());
+		}
+		return al;
 	
-	
+	}
 }
 
 interface LyambdaTest{
