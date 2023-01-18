@@ -67,6 +67,21 @@ public class LyambdaMain {
 		ArrayList<Student> cts = SortStudent.createThreeStudent(() -> new Student("Ivan", 18, true, 75)); 
 		System.out.println(cts); // 3
 		
+		System.out.println("----------------------");
+		System.out.println("Consumer");
+		
+		SortStudent.changerStudent(cts.get(0), s -> {
+			s.name = "whatever";
+			s.age = 90;
+			s.rating = 60.1;
+		});
+		
+		System.out.println(cts);
+		
+		
+		
+		
+		
 		
 		
 		

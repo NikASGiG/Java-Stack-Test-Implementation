@@ -2,6 +2,7 @@ package com.nikasgig.javacoretest.lyambda;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.function.Consumer;
 import java.util.function.Supplier;
 
 public class SortStudent {
@@ -124,6 +125,28 @@ public class SortStudent {
 		return al;
 	
 	}
+	
+	
+	
+	///////////////////////////
+	
+	public static void changerStudent(Student s, Consumer<Student> sconsumer) {
+		
+		sconsumer.accept(s);
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
 
 interface LyambdaTest{
