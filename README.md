@@ -17,7 +17,7 @@ Learning Collection
 9. HashSet TreeSet LinkedHashSet
 10. Queue PriorityQueue
 11. Nested Classes
-12. Lyambda
+12. Lyambda - Predicate Supplier Consumer Function
 
 
 Windows Applocation
