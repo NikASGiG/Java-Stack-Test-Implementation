@@ -9,6 +9,7 @@ import java.util.List;
 
 
 import java.util.Scanner; // импорт класса Scanner
+import java.util.stream.Stream;
 
 import com.nikasgig.javacoretest.WinApp.MainApp;
 
@@ -20,6 +21,7 @@ import com.nikasgig.javacoretest.collection.MainCollection;
 import com.nikasgig.javacoretest.lyambda.LyambdaMain;
 import com.nikasgig.javacoretest.nestedclasses.Nested;
 import com.nikasgig.javacoretest.recursion.RecursionDemo;
+import com.nikasgig.javacoretest.streams.StreamsMain;
 
 
 
@@ -273,16 +275,17 @@ public class JavaCoreTest {
 		nested.main();
 		
 		
-		// Lyambda
+		// Lambda
 		
 		System.out.println("----------------------");
 		LyambdaMain lm = new LyambdaMain();
 		lm.main();
 		
+		// Streams
 		
-		
-		
-		
+		System.out.println("----------------------");
+		StreamsMain sm = new StreamsMain();
+		sm.main();
 		
 		
 		
