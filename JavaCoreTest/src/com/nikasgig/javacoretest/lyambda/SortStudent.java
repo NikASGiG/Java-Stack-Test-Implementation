@@ -1,8 +1,10 @@
 package com.nikasgig.javacoretest.lyambda;
 
+import java.awt.List;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.function.Consumer;
+import java.util.function.Function;
 import java.util.function.Supplier;
 
 public class SortStudent {
@@ -137,7 +139,16 @@ public class SortStudent {
 	}
 	
 	
-	
+	public static double avrRating(ArrayList<Student> al, Function<Student, Double> f) {
+		
+		double result = 0;
+		for (Student student : al) {
+			result += f.apply(student);
+		}
+		result /= al.size();
+		return result;
+		
+	}
 	
 	
 	

@@ -1,6 +1,7 @@
 package com.nikasgig.javacoretest.lyambda;
 
 import java.util.ArrayList;
+import java.util.function.Function;
 
 import javax.lang.model.element.Element;
 
@@ -77,6 +78,30 @@ public class LyambdaMain {
 		});
 		
 		System.out.println(cts);
+		
+		System.out.println("----------------------");
+		System.out.println("Function");
+		Function<Student, Double> f = s -> s.rating;
+		
+		System.out.print("Average of arr.rating is ");
+		System.out.println(SortStudent.avrRating(arr, f));
+		
+		System.out.print("Average of cts.rating is ");
+		System.out.println(SortStudent.avrRating(cts, f));
+		System.out.println("---");
+		
+		System.out.print("Average of arr.rating is ");
+		System.out.println(SortStudent.avrRating(arr, s -> s.rating));
+		
+		System.out.print("Average of cts.rating is ");
+		System.out.println(SortStudent.avrRating(cts, s -> s.rating));
+		System.out.println("---");
+		System.out.print("Average of arr.age is ");
+		System.out.println(SortStudent.avrRating(arr, s -> (double) s.age));
+		
+		System.out.print("Average of cts.age is ");
+		System.out.println(SortStudent.avrRating(cts, s -> (double) s.age));
+		
 		
 		
 		
