@@ -18,6 +18,7 @@ Learning Collection
 10. Queue PriorityQueue
 11. Nested Classes
 12. Lyambda - Predicate Supplier Consumer Function
+13. Garbage Collector
 
 
 Windows Applocation
