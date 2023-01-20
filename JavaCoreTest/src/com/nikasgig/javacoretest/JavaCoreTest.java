@@ -18,6 +18,7 @@ import com.nikasgig.javacoretest.WinApp.MainApp;
 import com.nikasgig.javacoretest.arraygenerator.ArrayGenerator;
 import com.nikasgig.javacoretest.arraygenerator.ArrayToList;
 import com.nikasgig.javacoretest.collection.MainCollection;
+import com.nikasgig.javacoretest.gc.GCMain;
 import com.nikasgig.javacoretest.lyambda.LyambdaMain;
 import com.nikasgig.javacoretest.nestedclasses.Nested;
 import com.nikasgig.javacoretest.recursion.RecursionDemo;
@@ -281,11 +282,19 @@ public class JavaCoreTest {
 		LyambdaMain lm = new LyambdaMain();
 		lm.main();
 		
+		
+		// Garbage Collector
+		
+		GCMain gcm = new GCMain();
+		gcm.main();
+		
+		
+		
 		// Streams
 		
-		System.out.println("----------------------");
-		StreamsMain sm = new StreamsMain();
-		sm.main();
+		//System.out.println("----------------------");
+		//StreamsMain sm = new StreamsMain();
+		//sm.main();
 		
 		
 		
