@@ -284,7 +284,7 @@ public class JavaCoreTest {
 		
 		
 		// Garbage Collector
-		
+		System.out.println("----------------------");
 		GCMain gcm = new GCMain();
 		gcm.main();
 		
