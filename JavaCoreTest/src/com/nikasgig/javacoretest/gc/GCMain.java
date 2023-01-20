@@ -26,6 +26,7 @@ public class GCMain {
 		taskE();
 		System.gc();
 		System.out.println("----------------------");
+		System.out.println("after gc");
 		taskE();
 		
 		
