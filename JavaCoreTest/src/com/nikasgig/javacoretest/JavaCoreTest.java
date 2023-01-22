@@ -3,11 +3,12 @@ package com.nikasgig.javacoretest;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
 import java.util.List;
-
-
-
-
+import java.util.Map;
 import java.util.Scanner; // импорт класса Scanner
 import java.util.stream.Stream;
 
@@ -23,6 +24,7 @@ import com.nikasgig.javacoretest.lyambda.LyambdaMain;
 import com.nikasgig.javacoretest.nestedclasses.Nested;
 import com.nikasgig.javacoretest.recursion.RecursionDemo;
 import com.nikasgig.javacoretest.streams.StreamsMain;
+import com.nikasgig.javacoretest.testtask.TestTaskMain;
 
 
 
@@ -290,6 +292,15 @@ public class JavaCoreTest {
 		gcm.main();
 		
 		
+		// test task1 my version
+		
+		TestTaskMain ttm = new TestTaskMain();
+		ttm.task1();
+		
+		
+		// test task1 result version
+		
+		
 		
 		// Streams
 		
@@ -300,16 +311,7 @@ public class JavaCoreTest {
 		
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
+
 
 }
