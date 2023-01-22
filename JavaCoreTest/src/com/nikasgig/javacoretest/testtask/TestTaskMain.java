@@ -8,6 +8,28 @@ public class TestTaskMain {
 	
 	
 	
+	public void task1v() {
+		
+		System.out.println("TestTask1v");
+		System.out.println("----------------------");
+		Map<String, Integer> nonSortMap = new HashMap<String, Integer>();
+		nonSortMap.put("three", 3);
+		nonSortMap.put("one", 1);
+		nonSortMap.put("five", 5);
+		nonSortMap.put("two", 2);
+		nonSortMap.put("four", 4);
+		nonSortMap.put("six", 6);
+		System.out.println(nonSortMap);
+		LinkedHashMap<String, Integer> sortMap = new LinkedHashMap<String, Integer>();
+		//Map<String, Integer> sortMap1 = new HashMap<String, Integer>();
+		//sortMap = nonSortMap.entrySet().stream().sorted(Map.Entry.comparingByValue());
+		nonSortMap.entrySet().stream().sorted(Map.Entry.comparingByValue()).forEach(System.out::println);
+		
+		
+		
+		
+		
+	}
 	
 	
 	
@@ -22,8 +44,9 @@ public class TestTaskMain {
 	
 	
 	
-public void task1() {
-	System.out.println("TestTask1");
+	public void task1() {
+	
+		System.out.println("TestTask1");
 	System.out.println("----------------------");
 	System.out.println("----------------------");
 	System.out.println("----------------------");

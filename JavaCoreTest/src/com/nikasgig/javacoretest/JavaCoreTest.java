@@ -300,7 +300,7 @@ public class JavaCoreTest {
 		
 		// test task1 result version
 		
-		
+		ttm.task1v();
 		
 		// Streams
 		
