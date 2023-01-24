@@ -315,9 +315,9 @@ public class JavaCoreTest {
 		
 		// Streams
 		
-		//System.out.println("----------------------");
-		//StreamsMain sm = new StreamsMain();
-		//sm.main();
+		System.out.println("----------------------");
+		StreamsMain sm = new StreamsMain();
+		sm.main();
 		
 		
 		

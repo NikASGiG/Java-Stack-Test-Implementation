@@ -3,6 +3,7 @@ package com.nikasgig.javacoretest.testtask;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 public class TestTaskMain {
 	
@@ -24,9 +25,6 @@ public class TestTaskMain {
 		//Map<String, Integer> sortMap1 = new HashMap<String, Integer>();
 		//sortMap = nonSortMap.entrySet().stream().sorted(Map.Entry.comparingByValue());
 		nonSortMap.entrySet().stream().sorted(Map.Entry.comparingByValue()).forEach(System.out::println);
-		
-		
-		
 		
 		
 	}
