@@ -302,6 +302,17 @@ public class JavaCoreTest {
 		
 		ttm.task1v();
 		
+		
+		// check of polimorfism
+		
+		System.out.println("----------------------");
+		Animal dog3 = new Animal();
+		Dog dog4 = new Dog();
+		Animal dog5 = new Dog();
+		System.out.println(dog5.equals(dog4));
+		System.out.println("----------------------");
+		
+		
 		// Streams
 		
 		//System.out.println("----------------------");
