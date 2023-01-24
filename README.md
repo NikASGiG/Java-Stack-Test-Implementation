@@ -19,6 +19,7 @@ Learning Collection
 11. Nested Classes
 12. Lyambda - Predicate Supplier Consumer Function
 13. Garbage Collector
+14. Streams map
 
 
 Windows Applocation
