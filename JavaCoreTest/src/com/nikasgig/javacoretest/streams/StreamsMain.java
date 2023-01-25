@@ -139,6 +139,26 @@ public class StreamsMain {
 	
 		System.out.println(arrF);
 		System.out.println("----------------------");
+		System.out.println("forEach");
+		System.out.println(l1);
+		ArrayList<Integer> l5 = new ArrayList<Integer>(l1.size());
+		l1.stream().forEach(e->l5.add(Integer.valueOf(e)));
+		System.out.println(l5);
+		int[] mas5 = new int[l5.size()];
+		int i=0; l5.stream().forEach(e->
+		{mas5[i]=e;});
+		Arrays.stream(mas5).forEach(System.out::println);
+		System.out.println("----------------------");
+		
+		Arrays.stream(mas5).forEach(StreamSudent::iMultyTwo);
+		//Arrays.stream(mas5).forEach(System.out::println);
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		

@@ -21,5 +21,10 @@ public class StreamSudent extends Student {
 	public int getAge() {
 		return age;
 	}
+	public static void iMultyTwo(int i) {
+		i*=2;
+		if(i==0)i=1;
+		System.out.println(i);
+	}
 
 }
