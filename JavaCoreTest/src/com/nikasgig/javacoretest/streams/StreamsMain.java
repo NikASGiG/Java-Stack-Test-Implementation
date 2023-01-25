@@ -152,6 +152,7 @@ public class StreamsMain {
 		
 		Arrays.stream(mas5).forEach(StreamSudent::iMultyTwo);
 		//Arrays.stream(mas5).forEach(System.out::println);
+		System.out.println("----------------------");
 		
 		
 		
