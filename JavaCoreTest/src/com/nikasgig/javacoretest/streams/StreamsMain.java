@@ -4,14 +4,14 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-import java.util.Random;
+
 import java.util.Set;
 import java.util.TreeSet;
-import java.util.stream.Collector;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
-import javax.lang.model.element.VariableElement;
+import java.util.stream.Collectors;
+
+
+import com.nikasgig.javacoretest.lyambda.Student;
 
 public class StreamsMain {
 
@@ -113,7 +113,32 @@ public class StreamsMain {
 		List<String> l4 = set.stream().map(e->e+"&&&").collect(Collectors.toList());
 		System.out.println(l4);
 		System.out.println("----------------------");
+		System.out.println("filter");
 		
+		StreamSudent Student1;
+		
+		StreamSudent st1 = new StreamSudent("Misha", 18, true, 80.4);
+		StreamSudent st2 = new StreamSudent("Antony", 18, true, 62.9);
+		StreamSudent st3 = new StreamSudent("Valerian", 22, true, 82.9);
+		StreamSudent st4 = new StreamSudent("Oliver", 17, true, 97.1);
+		StreamSudent st5 = new StreamSudent("Maria", 21, false, 100);
+		StreamSudent st6 = new StreamSudent("Antony", 20, true, 90);
+		StreamSudent st7 = new StreamSudent("Nikita", 19, true, 74.3);
+		
+		ArrayList<StreamSudent> arr = new ArrayList<StreamSudent>();
+		arr.add(st1);
+		arr.add(st2);
+		arr.add(st3);
+		arr.add(st4);
+		arr.add(st5);
+		arr.add(st6);
+		arr.add(st7);
+		System.out.println(arr);
+		ArrayList<Student> arrF = new ArrayList<Student>(arr.stream().filter(e->e.getAge()>=20)
+				.collect(Collectors.toList()));
+	
+		System.out.println(arrF);
+		System.out.println("----------------------");
 		
 		
 		
