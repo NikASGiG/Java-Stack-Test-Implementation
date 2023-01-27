@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-
+import java.util.Optional;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -153,6 +153,53 @@ public class StreamsMain {
 		Arrays.stream(mas5).forEach(StreamSudent::iMultyTwo);
 		//Arrays.stream(mas5).forEach(System.out::println);
 		System.out.println("----------------------");
+		System.out.println("reduce");
+		
+		ArrayList<Integer> l6 = new ArrayList<Integer>(l5);
+		System.out.println(l6);
+		int result = l6.stream().reduce((accum, el) -> accum*el).get();
+		System.out.println(result);
+		//System.out.println(l6.get(0));
+		if(result == (l6.get(0)*l6.get(1)*l6.get(2)*l6.get(3)*l6.get(4))) {
+			System.out.println("l6.get(0)*l6.get(1)*l6.get(2)*l6.get(3)*l6.get(4) = " +
+					l6.get(0)*l6.get(1)*l6.get(2)*l6.get(3)*l6.get(4));
+		}
+		
+		List<Integer> l7 = new ArrayList<Integer>(); // empty
+		
+		Optional<Integer> o1 = Optional.of(l6.stream().reduce((accum, el) -> accum*el).get());
+		//Optional<Integer> o2 = Optional.of(l7.stream().reduce((accum, el) -> accum*el).get());
+		//System.out.println(l7.stream().reduce((accum, el) -> accum*el).get());
+		
+		if (o1.isPresent() == true) {
+			System.out.println("Optional<Integer> o1 = " + o1.get());
+		} else System.out.println("o1 is empty");
+		//if (o2.isPresent() == true) {
+		//	System.out.println(o2.get());
+		//} else System.out.println("o2 is empty");
+		
+		ArrayList<String> l8 = new ArrayList<String>();
+		l8.add("hello");
+		l8.add("my");
+		l8.add("name");
+		l8.add("is not");
+		l8.add("Bob");
+		System.out.println(l8);
+		System.out.println(l8.stream().reduce((a,e)->a+" "+e).get());
+		System.out.println("----------------------");
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		
