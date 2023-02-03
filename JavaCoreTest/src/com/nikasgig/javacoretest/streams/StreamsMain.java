@@ -235,7 +235,10 @@ public class StreamsMain {
 		Stream<Integer> stream4 = Stream.of(1,3,3,6,6,7,8,10,4,3,2,1,1,6,78,4,3,9,0);
 		System.out.println(stream4.count());
 		
-		
+		System.out.println("----------------------");
+		System.out.println("peak");
+		Stream<Integer> stream5 = Stream.of(1,3,3,6,6,7,8,10,4,3,2,1,1,6,78,4,3,9,0);
+		stream5.peek(System.out::print).forEach(System.out::print);
 		
 		
 		
