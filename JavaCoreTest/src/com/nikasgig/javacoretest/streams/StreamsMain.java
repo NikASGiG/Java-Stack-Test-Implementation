@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.Set;
 import java.util.TreeSet;
-
+import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 
@@ -125,7 +125,7 @@ public class StreamsMain {
 		StreamSudent st6 = new StreamSudent("Antony", 20, true, 90);
 		StreamSudent st7 = new StreamSudent("Nikita", 19, true, 74.3);
 		
-		ArrayList<StreamSudent> arr = new ArrayList<StreamSudent>();
+		List<StreamSudent> arr = new ArrayList<StreamSudent>();
 		arr.add(st1);
 		arr.add(st2);
 		arr.add(st3);
@@ -177,7 +177,7 @@ public class StreamsMain {
 		//if (o2.isPresent() == true) {
 		//	System.out.println(o2.get());
 		//} else System.out.println("o2 is empty");
-		
+		System.out.println("----------------------");
 		ArrayList<String> l8 = new ArrayList<String>();
 		l8.add("hello");
 		l8.add("my");
@@ -186,8 +186,22 @@ public class StreamsMain {
 		l8.add("Bob");
 		System.out.println(l8);
 		System.out.println(l8.stream().reduce((a,e)->a+" "+e).get());
-		System.out.println("----------------------");
 		
+		
+		
+		
+		System.out.println("----------------------");
+		System.out.println("sorted");
+		int[] mas2 = {7,3,8,9,9,0,1,4,5,7,3,2,6,66,33,1,1};
+		System.out.println(Arrays.toString(mas2));
+		mas2 = Arrays.stream(mas2).sorted().toArray();
+		System.out.println(Arrays.toString(mas2));
+		
+		System.out.println(arr);
+		//arr = arr.stream().sorted((x,y)->{
+		//	return x.getAge().compareTo(y.getAge());
+		//}
+		//).collect(Collectors.toList());
 		
 		
 		
