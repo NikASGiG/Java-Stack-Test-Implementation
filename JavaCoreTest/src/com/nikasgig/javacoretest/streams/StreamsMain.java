@@ -203,6 +203,11 @@ public class StreamsMain {
 		//}
 		//).collect(Collectors.toList());
 		
+		System.out.println("----------------------");
+		System.out.println("chaining");
+		
+		System.out.println(arr);
+		arr.stream().map(e->e.age-e.age).filter(e->e > e+1).forEach(System.out::println);
 		
 		
 		
