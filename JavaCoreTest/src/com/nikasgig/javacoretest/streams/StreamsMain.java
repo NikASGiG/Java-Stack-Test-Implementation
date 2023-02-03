@@ -9,7 +9,7 @@ import java.util.Set;
 import java.util.TreeSet;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
-
+import java.util.stream.Stream;
 
 import com.nikasgig.javacoretest.lyambda.Student;
 
@@ -207,11 +207,23 @@ public class StreamsMain {
 		System.out.println("chaining");
 		
 		System.out.println(arr);
-		arr.stream().map(e->e.age-e.age).filter(e->e > e+1).forEach(System.out::println);
+		arr.stream().map(e->e.age-e.age).filter(e->e > e+1).forEach(System.out::println);//.collect(Collectors.toList()));
+		//System.out.println(arr);
 		
+		System.out.println("----------------------");
+		System.out.println("concat");
 		
+		Stream<Integer> stream1 = Stream.of(1,2,3,4,5);
+		//stream1.forEach(e->System.out.print(e + " "));
+		System.out.println();
+		Stream<Integer> stream2 = Stream.of(6,7,8,9,0);
+		//stream2.forEach(e->System.out.print(e + " "));
+		System.out.println();
 		
-		
+		Stream<Integer> stream12 = Stream.concat(stream1, stream2);
+		stream12.forEach(e->System.out.print(e + " "));
+		//stream1.close();
+		//stream2.close();
 		
 		
 		
