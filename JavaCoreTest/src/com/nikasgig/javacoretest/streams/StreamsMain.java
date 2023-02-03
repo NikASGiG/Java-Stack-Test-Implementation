@@ -224,8 +224,10 @@ public class StreamsMain {
 		stream12.forEach(e->System.out.print(e + " "));
 		//stream1.close();
 		//stream2.close();
-		
-		
+		System.out.println("----------------------");
+		System.out.println("distinct");
+		Stream<Integer> stream3 = Stream.of(1,3,3,6,6,7,8,10,4,3,2,1,1,6,78,4,3,9,0);
+		stream3.distinct().forEach(e->System.out.print(e + " "));
 		
 		
 		
