@@ -11,6 +11,8 @@ import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+import javax.xml.ws.handler.MessageContext.Scope;
+
 import com.nikasgig.javacoretest.lyambda.Student;
 
 public class StreamsMain {
@@ -239,9 +241,51 @@ public class StreamsMain {
 		System.out.println("peak");
 		Stream<Integer> stream5 = Stream.of(1,3,3,6,6,7,8,10,4,3,2,1,1,6,78,4,3,9,0);
 		stream5.peek(System.out::print).forEach(System.out::print);
+		System.out.println();
+		
+		System.out.println("----------------------");
+		System.out.println("flatMap");
+		
+		Student pupil1 = new Student("Antony", 18, true, 62.9);
+		Student pupil2 = new Student("Valerian", 22, true, 82.9);
+		Student pupil3 = new Student("Oliver", 17, true, 97.1);
+		Student pupil4 = new Student("Maria", 21, false, 100);
+		Student pupil5 = new Student("Antony", 20, true, 90);
+		Student pupil6 = new Student("Nikita", 19, true, 74.3);
+		
+		List<Student> school = new ArrayList<Student>();
+		school.add(pupil1);
+		school.add(pupil2);
+		school.add(pupil3);
+		school.add(pupil4);
+		school.add(pupil5);
+		school.add(pupil6);
+
+		Faculty f1 = new Faculty(school, "Computer Sience");
+		System.out.println(f1);
+		Faculty f2 = new Faculty(school, "System analitics");
+		System.out.println(f2);
+		
+		
+		List<Student> school1 = new ArrayList<Student>();
+
+		school1.add(pupil3);
+		school1.add(pupil6);
+		Faculty f3 = new Faculty(school1, "Bodybuilding");
+		System.out.println(f3);
+		
+
 		
 		
 		
+		List<Faculty> faculty = new ArrayList<>();
+		faculty.add(f1);
+		faculty.add(f2);
+		faculty.add(f3);
+		System.out.println(faculty);
+		System.out.println("----------------------");
+		faculty.stream().flatMap(e->e.getStudents().stream()).forEach(System.out::println);
+		System.out.println("----------------------");
 		
 		
 		
