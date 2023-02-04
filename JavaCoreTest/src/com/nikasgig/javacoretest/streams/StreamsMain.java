@@ -311,9 +311,26 @@ public class StreamsMain {
 		Optional<Faculty> nst = faculty.stream().findFirst();
 		System.out.println(nst);
 		
-		
-		
-		
+		System.out.println("----------------------");
+		System.out.println("min and max");
+		List<Student1> schoolStudent1 = new ArrayList<Student1>();
+		Student pupil11 = new Student1("Antony", 18, true, 62.9);
+		Student pupil21 = new Student1("Valerian", 22, true, 82.9);
+		Student pupil31 = new Student1("Oliver", 17, true, 97.1);
+		Student pupil41 = new Student1("Maria", 21, false, 100);
+		Student pupil51 = new Student1("Antony", 20, true, 90);
+		Student pupil61 = new Student1("Nikita", 19, true, 74.3);
+		schoolStudent1.add((Student1)pupil11);
+		schoolStudent1.add((Student1)pupil21);
+		schoolStudent1.add((Student1)pupil31);
+		schoolStudent1.add((Student1)pupil41);
+		schoolStudent1.add((Student1)pupil51);
+		schoolStudent1.add((Student1)pupil61);
+		System.out.println(schoolStudent1);
+		Optional<Student1> min = schoolStudent1.stream().min((x,y)-> x.getAge() - y.getAge());
+		System.out.println("min = " + min);
+		Optional<Student1> max = schoolStudent1.stream().max((x,y)-> x.getAge() - y.getAge());
+		System.out.println("max = " + max);
 		
 		
 		
