@@ -16,12 +16,13 @@ Learning Collection
 8. Set
 9. HashSet TreeSet LinkedHashSet
 10. Queue PriorityQueue
-11. Nested Classes
-12. Lyambda - Predicate Supplier Consumer Function
-13. Garbage Collector
-14. Streams and its methods
-15. Multithreading
-
 
 Windows Applocation
 1. Example code Form WinApp
+
+Another part of Java Core
+1. Nested Classes
+2. Lyambda - Predicate Supplier Consumer Function
+3. Garbage Collector
+4. Streams and its methods
+5. Multithreading
