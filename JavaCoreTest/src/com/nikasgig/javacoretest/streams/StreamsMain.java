@@ -306,6 +306,31 @@ public class StreamsMain {
 			System.out.println(entry.getKey() + ": " + entry.getValue().toString());
 		}
 		
+		System.out.println("----------------------");
+		System.out.println("findFirst");
+		Optional<Faculty> nst = faculty.stream().findFirst();
+		System.out.println(nst);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		
