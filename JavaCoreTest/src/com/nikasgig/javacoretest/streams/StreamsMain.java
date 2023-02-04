@@ -6,6 +6,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import java.util.OptionalDouble;
 import java.util.Set;
 import java.util.TreeSet;
 import java.util.function.Supplier;
@@ -347,13 +348,19 @@ public class StreamsMain {
 		schoolStudent1.stream().mapToInt(e->e.ageStudent1).forEach(System.out::println);
 		List<Integer> ss1AgeList = schoolStudent1.stream().mapToInt(e->e.ageStudent1).boxed().collect(Collectors.toList());
 		System.out.println(ss1AgeList);
+		int sum = schoolStudent1.stream().mapToInt(e->e.ageStudent1).sum();
+		System.out.println("sum ages schoolStudent1 = " + sum);
 		
+		OptionalDouble average = schoolStudent1.stream().mapToInt(e->e.ageStudent1).average();
+		System.out.println("ages average schoolStudent1 = " + average.getAsDouble());
+		double average1 = schoolStudent1.stream().mapToInt(e->e.ageStudent1).average().getAsDouble();
+		System.out.println("ages average1 schoolStudent1 = " + average1);
 		
+		int min1 = schoolStudent1.stream().mapToInt(e->e.ageStudent1).min().getAsInt();
+		System.out.println("min1 ages schoolStudent1 = " + min1);
 		
-		
-		
-		
-		
+		int max1 = schoolStudent1.stream().mapToInt(e->e.ageStudent1).max().getAsInt();
+		System.out.println("max1 ages schoolStudent1 = " + max1);
 		
 		
 		
