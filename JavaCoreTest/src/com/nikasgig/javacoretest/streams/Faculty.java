@@ -31,7 +31,7 @@ public class Faculty {
 
 
 
-	public int localRandom(int a, int b) {
+	public static int localRandom(int a, int b) {
 		return (int)( Math.random() * (b-a) ) + a;
 	}
 

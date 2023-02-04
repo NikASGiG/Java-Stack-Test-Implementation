@@ -364,6 +364,26 @@ public class StreamsMain {
 		
 		
 		
+		System.out.println("----------------------");
+		System.out.println("----------------------");
+		System.out.println("Parallel Stream");
+		
+		List<Integer> parallelList = new ArrayList<Integer>(10000);
+		for (int j = 0; j < 10000; j++) {
+			parallelList.add(Faculty.localRandom(0,100));
+		}
+		sum = 0;
+		int sumP = 0;
+		System.out.println(parallelList.size());
+		sum = parallelList.stream().reduce((a,e)->a+e).get();
+		System.out.println(sum);
+		sumP = parallelList.parallelStream().reduce((a,e)->a+e).get();
+		System.out.println(sumP);
+		System.out.println("----------------------");
+		System.out.println("----------------------");
+		
+		
+		
 		
 		
 		
