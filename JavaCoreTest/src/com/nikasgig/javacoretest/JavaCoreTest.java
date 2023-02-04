@@ -21,6 +21,7 @@ import com.nikasgig.javacoretest.arraygenerator.ArrayToList;
 import com.nikasgig.javacoretest.collection.MainCollection;
 import com.nikasgig.javacoretest.gc.GCMain;
 import com.nikasgig.javacoretest.lyambda.LyambdaMain;
+import com.nikasgig.javacoretest.multithreading.MultithreadingMain;
 import com.nikasgig.javacoretest.nestedclasses.Nested;
 import com.nikasgig.javacoretest.recursion.RecursionDemo;
 import com.nikasgig.javacoretest.streams.StreamsMain;
@@ -318,6 +319,18 @@ public class JavaCoreTest {
 		System.out.println("----------------------");
 		StreamsMain sm = new StreamsMain();
 		sm.main();
+		
+		
+		// Multithreading
+		
+		System.out.println("----------------------");
+		MultithreadingMain mm = new MultithreadingMain();
+		mm.main();
+		
+		
+		
+		
+		
 		
 		
 		
