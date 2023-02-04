@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 import java.util.Set;
 import java.util.TreeSet;
@@ -286,12 +287,24 @@ public class StreamsMain {
 		System.out.println("----------------------");
 		faculty.stream().flatMap(e->e.getStudents().stream()).forEach(System.out::println);
 		System.out.println("----------------------");
+		System.out.println("collect grouping and partitioning");
+		System.out.println("grouping");
+		List<BlogPost> posts = Arrays.asList();
+		Map<BlogPostType, List<BlogPost>> postsPerType = posts.stream()
+				  .collect(Collectors.groupingBy(BlogPost::getType));
+		//System.out.println(postsPerType);
+		for (Map.Entry<BlogPostType, List<BlogPost>> entry: postsPerType.entrySet ()) {
+			System.out.println(entry.getKey() + ": " + entry.getValue().toString());
+		}
+		System.out.println("partitioning");
 		
-		
-		
-		
-		
-		
+		List<BlogPost> posts1 = Arrays.asList();
+		Map<BlogPostType, List<BlogPost>> postsPerType1 = posts1.stream()
+				  .collect(Collectors.groupingBy(BlogPost::getType));
+		//System.out.println(postsPerType);
+		for (Map.Entry<BlogPostType, List<BlogPost>> entry: postsPerType1.entrySet ()) {
+			System.out.println(entry.getKey() + ": " + entry.getValue().toString());
+		}
 		
 		
 		
