@@ -8,6 +8,7 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.Set;
 import java.util.TreeSet;
+import java.util.function.Supplier;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -341,9 +342,11 @@ public class StreamsMain {
 		System.out.println("skip");
 		school.stream().skip(3).forEach(System.out::println);
 		
-		
-		
-		
+		System.out.println("----------------------");
+		System.out.println("mapToInt");
+		schoolStudent1.stream().mapToInt(e->e.ageStudent1).forEach(System.out::println);
+		List<Integer> ss1AgeList = schoolStudent1.stream().mapToInt(e->e.ageStudent1).boxed().collect(Collectors.toList());
+		System.out.println(ss1AgeList);
 		
 		
 		
