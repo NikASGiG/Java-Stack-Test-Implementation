@@ -333,6 +333,10 @@ public class StreamsMain {
 		System.out.println("max = " + max);
 		
 		
+		System.out.println("----------------------");
+		System.out.println("limit");
+		school.stream().limit(3).forEach(System.out::println);
+		
 		
 		
 		
