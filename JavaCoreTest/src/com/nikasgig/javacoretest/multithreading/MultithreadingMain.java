@@ -2,7 +2,7 @@ package com.nikasgig.javacoretest.multithreading;
 
 public class MultithreadingMain {
 
-	public static void main() {
+	public void main() {
 		// Multithreading
 		
 				System.out.println("----------------------");
