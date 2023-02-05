@@ -69,7 +69,9 @@ public class MultithreadingMain {
 				Thread t4 = new Thread();
 				t4.setName("my_t4_thread");
 				System.out.println("t4.getName = " + t4.getName());
-				
+				System.out.println("setPriority");
+				t4.setPriority(Thread.MAX_PRIORITY); // 10
+				System.out.println("t4.getPriority = " + t4.getPriority());
 				
 				
 				
