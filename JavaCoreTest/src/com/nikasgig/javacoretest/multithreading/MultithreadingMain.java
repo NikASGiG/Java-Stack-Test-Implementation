@@ -34,7 +34,8 @@ public class MultithreadingMain {
 				}
 				//Toolkit.getDefaultToolkit().beep(); /////////////////////////////////////////////// beep()
 				try {
-					TimeUnit.SECONDS.sleep(1);
+					TimeUnit.MILLISECONDS.sleep(400);
+					//TimeUnit.SECONDS.sleep(1);
 				} catch (InterruptedException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -55,8 +56,15 @@ public class MultithreadingMain {
 				
 				new Thread(()->{for (int i = 0; i < 100; i++) {System.out.print(2);}}).start();
 				System.out.println("----------------------");
+				try {
+					TimeUnit.MILLISECONDS.sleep(100);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 				System.out.println("----------------------");
 				//Toolkit.getDefaultToolkit().beep(); /////////////////////////////////////////////// beep()
+				System.out.println("----------------------");
 				System.out.println();
 				
 				
