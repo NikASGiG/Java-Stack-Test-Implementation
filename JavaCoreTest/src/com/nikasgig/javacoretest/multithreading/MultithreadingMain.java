@@ -65,7 +65,26 @@ public class MultithreadingMain {
 				System.out.println("----------------------");
 				//Toolkit.getDefaultToolkit().beep(); /////////////////////////////////////////////// beep()
 				System.out.println("----------------------");
-				System.out.println();
+				System.out.println("setName");
+				Thread t4 = new Thread();
+				t4.setName("my_t4_thread");
+				System.out.println("t4.getName = " + t4.getName());
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
 				
 				
 				
