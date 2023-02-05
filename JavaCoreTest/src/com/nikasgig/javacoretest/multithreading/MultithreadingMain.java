@@ -32,7 +32,7 @@ public class MultithreadingMain {
 				for (int i = 0; i < 1000; i++) {
 					System.out.print("_");
 				}
-				Toolkit.getDefaultToolkit().beep(); /////////////////////////////////////////////// beep()
+				//Toolkit.getDefaultToolkit().beep(); /////////////////////////////////////////////// beep()
 				try {
 					TimeUnit.SECONDS.sleep(1);
 				} catch (InterruptedException e) {
@@ -56,7 +56,7 @@ public class MultithreadingMain {
 				new Thread(()->{for (int i = 0; i < 100; i++) {System.out.print(2);}}).start();
 				System.out.println("----------------------");
 				System.out.println("----------------------");
-				Toolkit.getDefaultToolkit().beep(); /////////////////////////////////////////////// beep()
+				//Toolkit.getDefaultToolkit().beep(); /////////////////////////////////////////////// beep()
 				System.out.println();
 				
 				
