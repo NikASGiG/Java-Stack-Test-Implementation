@@ -73,10 +73,26 @@ public class MultithreadingMain {
 				t4.setPriority(Thread.MAX_PRIORITY); // 10
 				System.out.println("t4.getPriority = " + t4.getPriority());
 				
+				System.out.println("----------------------");
+				System.out.println("sleep");
+				try {
+					Thread.sleep(1);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 				
-				
-				
-				
+				System.out.println("----------------------");
+				System.out.println("join");
+				Thread t5 = new Thread(new Thread2());
+				t5.start();
+				try {
+					t5.join();
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				System.out.println("thread is over");
 				
 				
 				
