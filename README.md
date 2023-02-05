@@ -20,7 +20,7 @@ Learning Collection
 Windows Applocation
 1. Example code Form WinApp
 
-Another part of Java Core
+Another parts of Java Core
 1. Nested Classes
 2. Lyambda - Predicate Supplier Consumer Function
 3. Garbage Collector
