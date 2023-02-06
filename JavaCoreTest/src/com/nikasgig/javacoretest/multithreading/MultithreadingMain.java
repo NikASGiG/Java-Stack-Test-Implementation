@@ -93,9 +93,18 @@ public class MultithreadingMain {
 					e.printStackTrace();
 				}
 				System.out.println("thread is over");
-				
-				
-				
+				System.out.println("----------------------");
+				Thread t6 = new Thread(new Thread2());
+				System.out.println("---" + t6.getState() + "---");
+				t6.start();
+				System.out.println("---" + t6.getState() + "---");
+				try {
+					t6.join();
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				System.out.println("---" + t6.getState() + "---");
 				
 				
 				
