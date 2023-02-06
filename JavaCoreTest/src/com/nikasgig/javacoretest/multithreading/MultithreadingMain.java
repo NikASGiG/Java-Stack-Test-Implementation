@@ -145,6 +145,30 @@ public class MultithreadingMain {
 		}
 		System.out.println("count = " + count);
 		
+		System.out.println("----------------------");
+		System.out.println("Data race");
+		
+		Thread t10 = new Thread(new Thread3());
+		Thread t11 = new Thread(new Thread3());
+		Thread t12 = new Thread(new Thread3());
+		t10.start();
+		t11.start();
+		t12.start();
+		try {
+			t10.join();
+			t11.join();
+			t12.join();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println();
+		System.out.println("DataRaceCounter.counter = " + DataRaceCounter.counter);
+		
+		
+		
+		
+		
 		
 		
 		
