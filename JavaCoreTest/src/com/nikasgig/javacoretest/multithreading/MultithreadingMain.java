@@ -164,6 +164,26 @@ public class MultithreadingMain {
 		}
 		System.out.println();
 		System.out.println("DataRaceCounter.counter = " + DataRaceCounter.counter);
+		System.out.println("----------------------");
+		System.out.println("synchronized");
+		DataRaceCounter.counter = 0;
+		Thread t13 = new Thread(new Thread4());
+		Thread t14 = new Thread(new Thread4());
+		Thread t15 = new Thread(new Thread4());
+		t13.start();
+		t14.start();
+		t15.start();
+		try {
+			t13.join();
+			t14.join();
+			t15.join();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println();
+		System.out.println("DataRaceCounter.counter = " + DataRaceCounter.counter);
+		
 		
 		
 		
