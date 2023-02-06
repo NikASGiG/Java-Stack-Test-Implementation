@@ -5,6 +5,8 @@ import java.util.concurrent.TimeUnit;
 
 public class MultithreadingMain {
 
+	
+	
 	public void main() {
 		// Multithreading
 		
@@ -94,6 +96,7 @@ public class MultithreadingMain {
 				}
 				System.out.println("thread is over");
 				System.out.println("----------------------");
+				System.out.println("getState");
 				Thread t6 = new Thread(new Thread2());
 				System.out.println("---" + t6.getState() + "---");
 				t6.start();
@@ -106,15 +109,48 @@ public class MultithreadingMain {
 				}
 				System.out.println("---" + t6.getState() + "---");
 				
+				System.out.println("----------------------");
 				
-				
-				
-				
-				
-				
-				
-				
-				
+				System.out.println("volatile");
+			
+				main2();
 	}
+	
+	volatile boolean vol = true;
+	volatile int count = 0;
+	
+	public void main2() {
+		
+		System.out.println("count = " + count);
+		
+		new Thread(new Runnable() {
+			
+			@Override
+			public void run() {
+			while (vol) {
+				count++;
+			}
+			System.out.println("Thread is TERMINATED");
+			}
+			
+			}).start();
+		System.out.println("Thread is running");
+		try {
+			Thread.sleep(200);
+			vol = false;
+			Thread.sleep(1);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println("count = " + count);
+		
+		
+		
+		
+		
+		
+	}
+	
 	
 }
