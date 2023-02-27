@@ -182,7 +182,6 @@ public class MultithreadingMain {
             t14.join();
             t15.join();
         } catch (InterruptedException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
         System.out.println();
@@ -204,7 +203,6 @@ public class MultithreadingMain {
             t18.join();
             t19.join();
         } catch (InterruptedException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
         System.out.println("----------------------");
@@ -216,26 +214,17 @@ public class MultithreadingMain {
             t20.join();
             t21.join();
         } catch (InterruptedException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
         System.out.println("----------------------");
-        System.out.println("wait and notify");
-        //MarketSimulator marketSimulator = new MarketSimulator();
-        Thread factory = new Thread(new Factory());
-        Thread buyer = new Thread(new Buyer());
-        factory.start();
-        buyer.start();
-        try {
-            factory.join();
-            System.out.println("factory is over");
-            if(factory.is)
-            buyer.join();
-            System.out.println("buyer is over");
-        } catch (InterruptedException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
+		/*
+		 * System.out.println("wait and notify"); //MarketSimulator marketSimulator =
+		 * new MarketSimulator(); Thread factory = new Thread(new Factory()); Thread
+		 * buyer = new Thread(new Buyer()); factory.start(); buyer.start(); try {
+		 * factory.join(); System.out.println("factory is over"); if(factory.isDaemon())
+		 * buyer.join(); System.out.println("buyer is over"); } catch
+		 * (InterruptedException e) { e.printStackTrace(); } //NikASGIG <pixtv03@gmail.com>
+		 */
         
         
 
