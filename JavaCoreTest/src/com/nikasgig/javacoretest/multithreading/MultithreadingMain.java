@@ -217,11 +217,39 @@ public class MultithreadingMain {
 			e.printStackTrace();
 		}
 		System.out.println("----------------------");
+		System.out.println("Lock and ReentrantLock");
+		Calls calls = new Calls();
+		Thread t22 = new Thread(new Runnable() {
+			@Override
+			public void run() {
+				calls.mobile();
+			}
+		});
+		Thread t23 = new Thread(new Runnable() {
+			@Override
+			public void run() {
+				calls.telegram();
+			}
+		});
+		Thread t24 = new Thread(new Runnable() {
+			@Override
+			public void run() {
+				calls.instagram();
+			}
+		});
+		t22.start();
+		t23.start();
+		t24.start();
 		
-		
-		
-		
-		
+		try {
+			t22.join();
+			t23.join();
+			t24.join();
+		} catch (Exception e) {
+		}
+		finally {
+			System.out.println("----------------------");
+		}
 		
 		
 	}
