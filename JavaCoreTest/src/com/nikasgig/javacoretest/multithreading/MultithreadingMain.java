@@ -1,6 +1,7 @@
 package com.nikasgig.javacoretest.multithreading;
 
 import java.awt.Toolkit;
+import java.lang.management.GarbageCollectorMXBean;
 import java.util.concurrent.TimeUnit;
 
 public class MultithreadingMain {
@@ -250,6 +251,19 @@ public class MultithreadingMain {
 		finally {
 			System.out.println("----------------------");
 		}
+		System.out.println("Daemon Thread");
+		
+		Thread t25 = new Thread(new Runnable() {
+			@Override
+			public void run() {
+				System.out.println("I am daemon");
+				System.gc();
+			}
+		});
+		t25.setDaemon(true);
+		t25.start();
+		System.out.println("true = " + t25.isDaemon());
+		
 		
 		
 	}
