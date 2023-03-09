@@ -263,9 +263,15 @@ public class MultithreadingMain {
 		t25.setDaemon(true);
 		t25.start();
 		System.out.println("true = " + t25.isDaemon());
-		
+		System.out.println("----------------------");
+		System.out.println("stop thread");
+		Thread t26 = new Interrupted();
+		t26.start();
+		for (int i = 0; i < 100; i++) {
+			System.out.print(" bye " + i);
+		}
+		t26.interrupt();
 		
 		
 	}
-
 }
